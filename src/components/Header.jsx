@@ -1,6 +1,6 @@
 import styles from './Header.module.css';
 
-function Header() {
+export default function Header() {
   return 
   <header className={styles.header}>Mit Portfolio</header>;
 }
