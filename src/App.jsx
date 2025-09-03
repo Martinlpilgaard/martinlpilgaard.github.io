@@ -1,4 +1,5 @@
 import { Route, Routes } from "react-router";
+import {Navigate} from "react-router";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
@@ -7,7 +8,7 @@ import Nav from "./components/NavLink";
 
 function App() {
   return (
-    <div>
+    <main className ="App">
       <Nav />
     <Routes>
       {/* Routes go here */}
@@ -17,7 +18,7 @@ function App() {
       <Route path="/contact" element={<Contact />} />
       <Route path="/project" element={<Project />} />
     </Routes>
-    </div>
+    </main>
   );
 }
 
