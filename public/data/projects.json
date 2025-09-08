@@ -1,11 +1,12 @@
+[
 {
   "id": 1,
-  "title": "Portfolio Website",
-  "year": 2025,
-  "description": "Mit portfolio bygget med React.",
+  "title": "BEDR BEER",
+  "year": 2024,
+  "description": "Alkoholfri øl.",
   "tags": ["React", "Portfolio", "Frontend"],
   "image": "/img/portfolio.webp",
-  "links":,
+  "links":[]
 },
 
 {
@@ -15,7 +16,7 @@
   "description": "Mit portfolio bygget med React.",
   "tags": ["React", "Portfolio", "Frontend"],
   "image": "/img/portfolio.webp",
-  "links": ,
+  "links":[] 
 },
 
 {
@@ -25,7 +26,7 @@
   "description": "Mit portfolio bygget med React.",
   "tags": ["React", "Portfolio", "Frontend"],
   "image": "/img/portfolio.webp",
-  "links": ,
+  "links": []
 },
 
 {
@@ -35,4 +36,7 @@
   "description": "Mit portfolio bygget med React.",
   "tags": ["React", "Portfolio", "Frontend"],
   "image": "/img/portfolio.webp",
-  "links": ,}
+  "links": []
+}
+
+]

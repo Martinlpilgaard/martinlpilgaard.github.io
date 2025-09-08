@@ -1,4 +1,3 @@
-
 import { useEffect, useState } from "react";
 import { NavLink } from "react-router";
 
@@ -13,6 +12,8 @@ export default function Projects() {
     }
     getData();
   }, []);
+  console.log("projects i state", projects);
+
   return (
     <section id="projects">
       <div className="headline-container">
