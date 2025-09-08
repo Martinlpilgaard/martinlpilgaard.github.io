@@ -5,7 +5,7 @@
     "subtitle": "Website + Webshop",
     "body": "House of Vincent's webshop is implemented with Shopify and has several customised features. The customisations of the Shopify theme are made with Liquid, JavaScript, HTML and CSS.",
     "links": [{ "url": "https://houseofvincent.com", "text": "Go to website and webshop" }],
-    "image": "https://cederdorff.com/img/houseofvincent.webp"
+    "image": "img/houseofvincent.webp"
   },
   {
     "id": "1",
