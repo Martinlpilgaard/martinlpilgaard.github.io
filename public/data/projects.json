@@ -5,7 +5,7 @@
   "description": "Mit portfolio bygget med React.",
   "tags": ["React", "Portfolio", "Frontend"],
   "image": "/img/portfolio.webp",
-  "links": [{url: "https://cederdorff.github.io", text: "React Portfolio"}]
+  "links":,
 },
 
 {
@@ -15,7 +15,7 @@
   "description": "Mit portfolio bygget med React.",
   "tags": ["React", "Portfolio", "Frontend"],
   "image": "/img/portfolio.webp",
-  "links": [{url: "https://cederdorff.github.io", text: "React Portfolio"}]
+  "links": ,
 },
 
 {
@@ -25,7 +25,7 @@
   "description": "Mit portfolio bygget med React.",
   "tags": ["React", "Portfolio", "Frontend"],
   "image": "/img/portfolio.webp",
-  "links": [{url: "https://cederdorff.github.io", text: "React Portfolio"}]
+  "links": ,
 },
 
 {
@@ -35,5 +35,4 @@
   "description": "Mit portfolio bygget med React.",
   "tags": ["React", "Portfolio", "Frontend"],
   "image": "/img/portfolio.webp",
-  "links": [{url: "https://cederdorff.github.io", text: "React Portfolio"}]
-}
+  "links": ,}

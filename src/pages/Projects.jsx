@@ -9,7 +9,7 @@ export default function Projects() {
     async function getData() {
       const response = await fetch("/data/projects.json");
       const data = await response.json();
-      setClients(data);
+      setProjects(data);
     }
     getData();
   }, []);
@@ -18,12 +18,17 @@ export default function Projects() {
       <div className="headline-container">
         <h2>Projects</h2>
       </div>
-      {projects.map((project) => (
-        <div key={project.id}>
-          <NavLink to={`/projects/${project.id}`}>Læs mere</NavLink>
-        </div>
-      ))}
+      <div className="grid">
+        {projects.map((project) => (
+            <article key={project.id} className="project-card">
+                <img src={project.image} alt={project.title} />
+                <h3>{project.title}</h3>
+                <p>{project.description}</p>
+                <NavLink to={`/projects/${project.id}`}>se detaljer</NavLink>
+            </article>
+        ))}
+      </div>
     </section>
   );
-  console.log(projects);
+  
 }
