@@ -1,36 +1,24 @@
-/* Fonts (du kan udskifte med dine egne) */
-@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@700;800&family=Manrope:wght@300;400;600&display=swap');
+/* Fonts … (behold som før) */
 
 :root{
   --bg: #f2f2f2;
   --ink: #222;
   --ink-soft: #5b5b5b;
-  --accent: #1e3a34;  /* mørk grøn: titel */
-  --chip: #3b2a25;    /* brunlig: "VELKOMMEN!" */
-  --ring: #1f3a34;    /* til små streger/pile */
+  --accent: #1e3a34;
+  --chip: #3b2a25;
+  --ring: #1f3a34;
   --maxw: 1160px;
 
-  /* BILLEDER — byt disse værdier til dine filer */
-  --header-bg: url('/images/bg-texture.png');   /* stor blød baggrund */
-  --hero-portrait: url('/images/hero-portrait.png'); /* portræt nederst venstre */
+  /* Sæt header-baggrund og/eller portræt */
+  --header-bg: url('/images/Martin1.png');
+  /* hvis du også vil bruge det som portrætlag: */
+  /* --hero-portrait: url('/images/Martin1.png'); */
 }
 
-* { box-sizing: border-box; }
-html, body, #root { height: 100%; }
+/* valgfrit: hvis du satte body-baggrund tidligere, kan du fjerne den igen */
 body{
   margin: 0;
   background: var(--bg);
   color: var(--ink);
   font-family: "Manrope", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-}
-
-/* Hjælpeklasser */
-.container{
-  width: min(100%, var(--maxw));
-  margin-inline: auto;
-  padding-inline: 24px;
-}
-.visually-hidden{
-  position:absolute!important;clip:rect(1px,1px,1px,1px);
-  padding:0;border:0;height:1px;width:1px;overflow:hidden;white-space:nowrap;
 }

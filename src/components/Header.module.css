@@ -1,119 +1,17 @@
 .header{
-  position: relative;
-  padding-top: 18px;
-  padding-bottom: 28px;
-  background:
-    radial-gradient(1200px 520px at 50% -200px, rgba(255,255,255,0.85), rgba(255,255,255,0)) ,
-    var(--header-bg);
+  /* Erstat evt. den gamle background med denne: */
+  background-image: var(--header-bg);
   background-size: cover;
   background-position: center;
+  position: relative;
   overflow: clip;
   min-height: 360px;
 }
 
-/* topbar */
-.bar{
-  display: grid;
-  grid-template-columns: 1fr auto;
-  align-items: center;
-}
-
-.brand{
-  display: inline-flex;
-  align-items: center;
-  gap: 12px;
-}
-.logoPh{
-  inline-size: 44px;
-  block-size: 44px;
-  border-radius: 12px;
-  background: #fff8;
-  outline: 2px dashed #0003;
-  outline-offset: 3px;
-}
-.brandText{
-  display:flex;
-  flex-direction:column;
-  line-height: 1.05;
-  font-size: 15px;
-}
-.brandText strong{ font-weight: 700; }
-.brandText span{ color: var(--ink-soft); }
-
-/* nav */
-.nav{
-  display: inline-flex;
-  gap: 28px;
-  align-items: center;
-}
-.nav a{
-  text-decoration: none;
-  color: var(--ink-soft);
-  padding: 8px 2px;
-  border-radius: 10px;
-  transition: color .15s ease, background .15s ease, transform .15s ease;
-}
-.nav a:hover{ color: var(--ink); background: #0000000c; transform: translateY(-1px); }
-.active{ color: var(--ink); }
-
-/* Hero typografi */
-.display{
-  font-family: "Baloo 2", system-ui, sans-serif;
-  font-weight: 800;
-  letter-spacing: 0.02em;
-  color: var(--accent);
-  font-size: clamp(48px, 10vw, 120px);
-  margin: 38px 0 4px;
-}
-.byline{
-  margin: 0;
-  color: var(--ink-soft);
-  font-size: clamp(14px, 2vw, 22px);
-}
-
-/* Portræt nederst venstre */
-.portrait{
-  position: absolute;
-  left: 0;
-  bottom: -8px;
-  width: min(42vw, 520px);
-  height: min(42vw, 520px);
-  background-image: var(--hero-portrait);
-  background-position: left bottom;
-  background-repeat: no-repeat;
-  background-size: contain;
-  pointer-events: none;
-  filter: grayscale(1);
-}
-
-/* Vertikal DK-rail højre side */
-.dkRail{
-  position: absolute;
-  right: 22px;
-  bottom: 40px;
-  display: grid;
-  justify-items: center;
-  gap: 10px;
-}
-.dkRail::before{
-  content: "";
-  display: block;
-  width: 2px;
-  height: 120px;
-  background: var(--ring);
-  border-radius: 2px;
-}
-.dkRail span{
-  writing-mode: vertical-rl;
-  transform: rotate(180deg);
-  letter-spacing: 0.2em;
-  color: var(--ink-soft);
-  font-weight: 600;
-}
-
-/* Responsivitet */
-@media (max-width: 860px){
-  .portrait{ opacity: .6; width: min(60vw, 440px); height: min(60vw, 440px); }
-  .bar{ grid-template-columns: 1fr; row-gap: 8px; }
-  .nav{ justify-self: start; gap: 18px; }
+/* Hvis du vil have et let hvidt skær, lav en overlay */
+.header::before{
+  content:"";
+  position:absolute; inset:0;
+  background: radial-gradient(1200px 520px at 50% -200px, rgba(255,255,255,0.85), rgba(255,255,255,0) 60%);
+  pointer-events:none;
 }
