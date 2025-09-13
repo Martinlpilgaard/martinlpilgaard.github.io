@@ -7,13 +7,13 @@
   position: relative;
 }
 
-/* Den mørke, runde overskrift */
+/* Rund, mørk titel */
 .title{
   font-family: "Baloo 2", system-ui, sans-serif;
   font-weight: 800;
   letter-spacing: 0.02em;
   font-size: clamp(28px, 5vw, 44px);
-  color: #2f221d;             /* svarer til mockup'ens brune tekst */
+  color: #2f221d;
   text-shadow: 0 1px 0 #0001;
 }
 
@@ -52,7 +52,6 @@
   font-weight: 700;
 }
 
-/* Responsivitet */
 @media (max-width: 860px){
   .wrap{ grid-template-columns: 1fr; }
   .title{ order: -1; }
