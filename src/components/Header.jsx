@@ -22,12 +22,11 @@ export default function Header({ style }){
 
       <div className={`container ${styles.hero}`}>
         <h1 className={styles.display}>PORTFOLIO</h1>
-        <p className={styles.byline}>by Martin Lind Pilgaard</p>
+        <h2 className={styles.byline}>by Martin Lind Pilgaard</h2>
       </div>
 
       <div className={styles.portrait} aria-hidden="true" />
       <div className={styles.dkRail} aria-hidden="true">
-        <span>DK</span>
       </div>
     </header>
   );

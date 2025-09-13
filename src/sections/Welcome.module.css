@@ -1,58 +1,55 @@
+/* To kolonner: venstre = figur, højre = tekst */
 .wrap{
   display: grid;
-  grid-template-columns: 360px 1fr;
+  grid-template-columns: minmax(320px, 520px) 1fr; /* venstre kolonne til billedet */
   gap: clamp(16px, 4vw, 40px);
-  align-items: start;
+  align-items: end;                 /* billedets bund flugter pænt */
   padding-block: clamp(24px, 6vw, 64px);
   position: relative;
 }
 
-/* Rund, mørk titel */
+/* FIGUR (venstre kolonne) — justér med variabler */
+.figure{
+  --welcome-fig-w: min(42vw, 520px);
+  --welcome-fig-mt: 0px;
+  --welcome-fig-mr: 0px;
+  --welcome-fig-mb: 0px;
+  --welcome-fig-ml: 0px;
+
+  margin: var(--welcome-fig-mt) var(--welcome-fig-mr)
+          var(--welcome-fig-mb) var(--welcome-fig-ml);
+}
+
+.cutout{
+  display: block;
+  width: min(var(--welcome-fig-w), 100%);
+  height: auto;
+  object-fit: contain;
+  filter: grayscale(1);             /* fjern, hvis du vil have farver */
+}
+
+/* Højre kolonne (din eksisterende styling) */
 .title{
-  font-family: "Baloo 2", system-ui, sans-serif;
-  font-weight: 800;
+  font-family: "Modak", system-ui, sans-serif;
+  font-weight: 400;
   letter-spacing: 0.02em;
-  font-size: clamp(28px, 5vw, 44px);
+  font-size: clamp(35px, 5vw, 44px);
   color: #2f221d;
   text-shadow: 0 1px 0 #0001;
+  margin-top: -420px;
+  margin-left: -80px;
 }
-
-/* Tekstkolonne */
-.copy{
-  color: var(--ink-soft);
-  font-size: clamp(15px, 1.6vw, 18px);
+.subheading{
+  font-family: "Poppins", system-ui, sans-serif;
+  font-weight: 200;
+  font-size: clamp(25px, 1.6vw, 18px);
   line-height: 1.7;
+  color: var(--ink-soft);
+  margin-top: -40px;
 }
 
-/* Links med små pile */
-.links{
-  list-style: none;
-  padding: 0;
-  margin: 18px 0 0;
-  display: grid;
-  gap: 10px;
-}
-.links a{
-  text-decoration: none;
-  color: var(--ink);
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  border-bottom: 1px solid transparent;
-  transition: transform .15s ease, border-color .15s ease;
-}
-.links a:hover{
-  transform: translateX(2px);
-  border-color: #0002;
-}
-.arrow{
-  display: inline-block;
-  translate: 0 -1px;
-  color: var(--ring);
-  font-weight: 700;
-}
-
+/* Mobil: stack — billedet under teksten (kan ændres) */
 @media (max-width: 860px){
   .wrap{ grid-template-columns: 1fr; }
-  .title{ order: -1; }
+  .figure{ order: 2; }  /* flyt billedet under teksten på mobil */
 }

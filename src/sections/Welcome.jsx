@@ -6,18 +6,37 @@ export default function Welcome(){
     <section className={`container ${styles.wrap}`}>
       <h2 className="visually-hidden">Introduktion</h2>
 
-      <div className={styles.title}>VELKOMMEN!</div>
+      <figure
+        className={styles.figure}
+    
+      >
+        <img
+          className={styles.cutout}
+          src="/images/Martinpng.png"
+          alt="Martin sidder og kigger op"
+        />
+      </figure>
+
 
       <div className={styles.copy}>
-        <p>
+        <h1 className={styles.title}>VELKOMMEN!</h1>
+        <h2 className={styles.subheading}>
           Jeg er en digital og grafisk designer, med en
           passion for at skabe design, der ikke bare ser flotte ud,
           men også giver mening og værdi.
-        </p>
+        </h2>
 
         <ul className={styles.links}>
-          <li><Link to="/about"><span className={styles.arrow} aria-hidden>↦</span> Lær om mere om mig</Link></li>
-          <li><Link to="/projects"><span className={styles.arrow} aria-hidden>↦</span> Se mine projekter</Link></li>
+          <li>
+            <Link to="/about">
+              <span className={styles.arrow} aria-hidden>↦</span> Lær mere om mig
+            </Link>
+          </li>
+          <li>
+            <Link to="/projects">
+              <span className={styles.arrow} aria-hidden>↦</span> Se mine projekter
+            </Link>
+          </li>
         </ul>
       </div>
     </section>
