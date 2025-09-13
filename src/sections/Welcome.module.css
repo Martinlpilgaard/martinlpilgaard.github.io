@@ -10,7 +10,7 @@
 
 /* FIGUR (venstre kolonne) — justér med variabler */
 .figure{
-  --welcome-fig-w: min(42vw, 520px);
+  --welcome-fig-w: min(42vw, 620px);
   --welcome-fig-mt: 0px;
   --welcome-fig-mr: 0px;
   --welcome-fig-mb: 0px;
@@ -22,9 +22,11 @@
 
 .cutout{
   display: block;
-  width: min(var(--welcome-fig-w), 100%);
+  width: 550px;
   height: auto;
   object-fit: contain;
+  margin-top: -100px;
+  margin-left: -60px;
   filter: grayscale(1);             /* fjern, hvis du vil have farver */
 }
 
@@ -33,10 +35,10 @@
   font-family: "Modak", system-ui, sans-serif;
   font-weight: 400;
   letter-spacing: 0.02em;
-  font-size: clamp(35px, 5vw, 44px);
+  font-size: clamp(30px, 5vw, 44px);
   color: #2f221d;
   text-shadow: 0 1px 0 #0001;
-  margin-top: -420px;
+  margin-top: -350px;
   margin-left: -80px;
 }
 .subheading{
@@ -45,7 +47,7 @@
   font-size: clamp(25px, 1.6vw, 18px);
   line-height: 1.7;
   color: var(--ink-soft);
-  margin-top: -40px;
+  margin-top: -400px;
 }
 
 /* Mobil: stack — billedet under teksten (kan ændres) */

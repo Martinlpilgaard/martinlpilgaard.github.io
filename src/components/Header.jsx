@@ -19,15 +19,6 @@ export default function Header({ style }){
           <NavLink to="/contact"  className={({isActive})=> isActive ? styles.active : undefined}>Kontakt</NavLink>
         </nav>
       </div>
-
-      <div className={`container ${styles.hero}`}>
-        <h1 className={styles.display}>PORTFOLIO</h1>
-        <h2 className={styles.byline}>by Martin Lind Pilgaard</h2>
-      </div>
-
-      <div className={styles.portrait} aria-hidden="true" />
-      <div className={styles.dkRail} aria-hidden="true">
-      </div>
     </header>
   );
 }

@@ -1,10 +1,9 @@
 .header{
   position: relative;
   padding-top: 18px;
-  padding-bottom: 28px;
+  
   background: radial-gradient(1200px 520px at 50% -200px, rgba(255,255,255,0.85), rgba(255,255,255,0) 60%);
   overflow: clip;
-  min-height: 360px;
 }
 
 /* topbar */
@@ -52,28 +51,6 @@
 }
 .nav a:hover{ color: var(--ink); background: #0000000c; transform: translateY(-1px); }
 .active{ color: var(--ink); }
-
-/* Hero typografi */
-.display{
-  font-family: "Modak", system-ui, sans-serif;
-  font-weight: 400;   /* Regular */
-  letter-spacing: 0;
-  line-height: 1;
-  color: var(--accent);
-  font-size: clamp(158px, 10vw, 120px);
-  text-align: center;
-  margin: 68px 0 4px;
-}
-
-.byline{
-  font-family: "Poppins", system-ui, sans-serif;
-  font-weight: 200;                 /* ExtraLight */
-  font-size: clamp(24px, 1.6vw, 18px);  /* matcher din Welcome-subheading */
-  line-height: 1.7;
-  color: var(--ink-soft);
-  margin-top: -35px;                        /* nulstil H2 default-margin */
-  margin-left:170px;
-}
 
 
 /* Portræt var kun til headeren – slået fra */

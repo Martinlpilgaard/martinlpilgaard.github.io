@@ -1,12 +1,13 @@
 import { motion } from "framer-motion";
+import "./Hero.css";
 
 export default function Hero() {
   return (
     <section className="hero">
       <motion.h1
-        initial={{ x: 300, opacity: 0 }}
+        initial={{ x: 500, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
-        transition={{ duration: 1, ease: "easeOut" }}
+        transition={{ duration: 1.2, ease: "easeOut" }}
       >
         PORTFOLIO
       </motion.h1>
@@ -14,7 +15,7 @@ export default function Hero() {
       <motion.p
         initial={{ x: 300, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
-        transition={{ duration: 1, ease: "easeOut", delay: 0.4 }}
+        transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
       >
         by Martin Lind Pilgaard
       </motion.p>

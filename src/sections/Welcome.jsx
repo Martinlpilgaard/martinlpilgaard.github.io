@@ -19,10 +19,10 @@ export default function Welcome(){
 
 
       <div className={styles.copy}>
-        <h1 className={styles.title}>VELKOMMEN!</h1>
+       
         <h2 className={styles.subheading}>
           Jeg er en digital og grafisk designer, med en
-          passion for at skabe design, der ikke bare ser flotte ud,
+          passion for at skabe design, der ikke bare ser flot ud,
           men også giver mening og værdi.
         </h2>
 

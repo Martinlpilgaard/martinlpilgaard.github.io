@@ -3,20 +3,28 @@
   flex-direction: column;
   align-items: center;    /* centrerer horisontalt */
   justify-content: flex-start; /* rykker op i toppen */
-  min-height: 100vh;      /* fylder hele skærmen */
-  padding-top: 8rem;      /* luft under header */
+  min-height: 50vh;      /* fylder hele skærmen */
+  padding-top: 1rem;      /* luft under header */
   text-align: center;
 }
 
 .hero h1 {
-  font-size: 5rem;
-  font-weight: 900;
-  letter-spacing: 2px;
-  color: #2d4532;
+  font-family: "Modak", system-ui, sans-serif;
+  font-weight: 400;   /* Regular */
+  letter-spacing: 0;
+  line-height: 1;
+  color: var(--accent);
+  font-size: clamp(138px, 10vw, 120px);
+  text-align: center;
+  margin: 68px 0 4px;
 }
 
 .hero p {
-  margin-top: 0.5rem;
-  font-size: 1.2rem;
-  color: #444;
+   font-family: "Poppins", system-ui, sans-serif;
+  font-weight: 200;                 /* ExtraLight */
+  font-size: clamp(14px, 1.6vw, 18px);  /* matcher din Welcome-subheading */
+  line-height: 1.7;
+  color: var(--ink-soft);
+  margin-top: -35px;                        /* nulstil H2 default-margin */
+  margin-right: 380px;
 }
