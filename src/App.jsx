@@ -1,28 +1,20 @@
-import { Route, Routes } from "react-router";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
-import About from "./pages/About";
-import Contact from "./pages/Contact";
-import Projects from "./pages/Projects";
-import Nav from "./components/NavLink";
 
-const About    = () => <section className="container"><h2>Om mig</h2></section>;
-const Contact  = () => <section className="container"><h2>Kontakt</h2></section>;
+// midlertidige sider – byt dem ud når de findes
+const About = () => <section className="container"><h2>Om mig</h2></section>;
+const Contact = () => <section className="container"><h2>Kontakt</h2></section>;
 const Projects = () => <section className="container"><h2>Projekter</h2></section>;
 
-
-function App() {
+export default function App() {
   return (
-    <main className ="App">
-      <Nav />
-    <Routes>
-      {/* Routes go here */}
-     <Route path="/" element={<Home />} />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/projects" element={<Projects />} />
-    </Routes>
-    </main>
+      </Routes>
+    </BrowserRouter>
   );
 }
-
-export default App;

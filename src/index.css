@@ -11,8 +11,8 @@
   --maxw: 1160px;
 
   /* BILLEDER — byt disse værdier til dine filer */
-  --header-bg: url('/images/Martin1.png');   /* stor blød baggrund */
-  --hero-portrait: url('/images/Martin1.png'); /* portræt nederst venstre */
+  --header-bg: url('/images/bg-texture.png');   /* stor blød baggrund */
+  --hero-portrait: url('/images/hero-portrait.png'); /* portræt nederst venstre */
 }
 
 * { box-sizing: border-box; }
