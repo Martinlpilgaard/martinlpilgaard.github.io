@@ -3,8 +3,12 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Projects from "./pages/Projects";
-import ProjectDetail from "./pages/ProjectDetail.jsx";
 import Nav from "./components/NavLink";
+
+const About    = () => <section className="container"><h2>Om mig</h2></section>;
+const Contact  = () => <section className="container"><h2>Kontakt</h2></section>;
+const Projects = () => <section className="container"><h2>Projekter</h2></section>;
+
 
 function App() {
   return (
@@ -12,11 +16,10 @@ function App() {
       <Nav />
     <Routes>
       {/* Routes go here */}
-      <Route path="/" element={<Home />} />
-      <Route path="/about" element={<About />} />
-      <Route path="/contact" element={<Contact />} />
-      <Route path="/projects" element={<Projects />} />
-      <Route path="/projects/:id" element={<ProjectDetail />} />
+     <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/projects" element={<Projects />} />
     </Routes>
     </main>
   );
