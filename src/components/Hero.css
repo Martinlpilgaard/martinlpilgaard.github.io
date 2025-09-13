@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;    /* centrerer horisontalt */
   justify-content: flex-start; /* rykker op i toppen */
-  min-height: 50vh;      /* fylder hele skærmen */
+  height: 50vh;      /* fylder hele skærmen */
   padding-top: 1rem;      /* luft under header */
   text-align: center;
 }
@@ -26,5 +26,5 @@
   line-height: 1.7;
   color: var(--ink-soft);
   margin-top: -35px;                        /* nulstil H2 default-margin */
-  margin-right: 380px;
+  margin-right: 480px;
 }
