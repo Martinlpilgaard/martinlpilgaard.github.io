@@ -1,9 +1,7 @@
 .header{
   position: relative;
   padding-top: 18px;
-  
-  background: radial-gradient(1200px 520px at 50% -200px, rgba(255,255,255,0.85), rgba(255,255,255,0) 60%);
-  overflow: clip;
+  background: #E8E8E8;
 }
 
 /* topbar */
@@ -45,11 +43,13 @@
     font-family: "Poppins", system-ui, sans-serif; /* NY */
   font-weight: 300; 
   color: var(--ink-soft);
+  text-decoration: none;
   padding: 8px 2px;
   border-radius: 10px;
   transition: color .15s ease, background .15s ease, transform .15s ease;
 }
-.nav a:hover{ color: var(--ink); background: #0000000c; transform: translateY(-1px); }
+.nav a:hover{ color: var(--ink); background: #0000000c; transform: translateY(-1px);
+color:#354F41 }
 .active{ color: var(--ink); }
 
 

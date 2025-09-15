@@ -15,7 +15,7 @@ export default function Header({ style }){
 
         <nav className={styles.nav} aria-label="Primær navigation">
           <NavLink to="/projects" className={({isActive})=> isActive ? styles.active : undefined}>Projekter</NavLink>
-          <NavLink to="/about"    className={({isActive})=> isActive ? styles.active : undefined}>Om mig</NavLink>
+          <NavLink to="/"         className={({isActive})=> isActive ? styles.active : undefined}>Om mig</NavLink>
           <NavLink to="/contact"  className={({isActive})=> isActive ? styles.active : undefined}>Kontakt</NavLink>
         </nav>
       </div>

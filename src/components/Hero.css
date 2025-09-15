@@ -13,7 +13,7 @@
   font-weight: 400;   /* Regular */
   letter-spacing: 0;
   line-height: 1;
-  color: var(--accent);
+  color:#354F41;
   font-size: clamp(138px, 10vw, 120px);
   text-align: center;
   margin: 68px 0 4px;

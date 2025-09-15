@@ -50,6 +50,42 @@
   margin-top: -400px;
 }
 
+.links {
+  margin-top: 2rem;
+  list-style: none;      /* fjern bullets */
+  padding: 0;            /* fjern indryk */
+  margin-left: 0;        /* ekstra sikkerhed */
+}
+
+.links li {
+  margin-bottom: 0.75rem;
+}
+
+.links a {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;       /* samme som subheading */
+  font-size: 1rem;        /* tilpas hvis subheading er større/mindre */
+  color: #111;            /* samme farve som subheading */
+  text-decoration: none;  /* fjern understregning */
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;            /* afstand mellem pil og tekst */
+  transition: color 0.3s ease;
+}
+
+.links a:hover {
+  color: #354F41;         /* accentfarve ved hover */
+}
+
+.arrow {
+  display: inline-block;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: rotate(-45deg);  /* laver en lille pil */
+}
+
 /* Mobil: stack — billedet under teksten (kan ændres) */
 @media (max-width: 860px){
   .wrap{ grid-template-columns: 1fr; }

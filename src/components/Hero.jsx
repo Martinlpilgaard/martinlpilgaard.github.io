@@ -5,9 +5,9 @@ export default function Hero() {
   return (
     <section className="hero">
       <motion.h1
-        initial={{ x: 500, opacity: 0 }}
+        initial={{ x: 200, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
-        transition={{ duration: 1.2, ease: "easeOut" }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
       >
         PORTFOLIO
       </motion.h1>
