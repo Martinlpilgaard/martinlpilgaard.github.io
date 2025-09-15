@@ -1,8 +1,8 @@
 import Header from "../components/Header";
+import Hero from "../components/Hero";
 import Welcome from "../sections/Welcome";
-import Hero from "../components/Hero"; 
-import Info from "../sections/Info"
-
+import Info from "../sections/Info";
+import Projects from "../sections/Projects";
 
 export default function Home() {
   return (
@@ -11,6 +11,7 @@ export default function Home() {
       <Hero />
       <Welcome />
       <Info />
+      <Projects />
     </>
   );
 }
