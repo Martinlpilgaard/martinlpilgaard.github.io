@@ -8,6 +8,7 @@
   align-items: center;
   justify-content: center;
   padding: 4rem 1rem;
+  margin-top: 100px;
 }
 
 /* Mobil/tablet: 2×2 grid */
@@ -32,10 +33,10 @@
   }
 
   /* Justér positioner så de matcher dit reference-billede */
-  .icon-1 { bottom: 35%;   left: 20%; }
+  .icon-1 { bottom: 50%;   left: 20%; }
   .icon-2 { top: 20%;  right: 12%; }
-  .icon-3 { top: 50%; left: 5%; }
-  .icon-4 { top:50%; right: 20%; }
+  .icon-3 { top: 45%; left: 5%; }
+  .icon-4 { top:60%; right: 20%; }
 }
 
 /* ====== IKON-CIRKLENS STØRRELSE (cirklen er “usynlig” — kun masken vises) ====== */

@@ -1,13 +1,12 @@
 .illustration-wrapper {
   position: relative;
-  width: 100%;
+  z-index: 20;
   display: flex;
   justify-content: center;
-  margin-top: -80px; /* træk den op over section ovenfor */
-  z-index: 10;       /* sikrer den overlapper */
+  margin-top: var(--overlap, -4rem);
   opacity: 0;
-  transform: translateY(40px);
-  transition: opacity 0.8s ease, transform 0.8s ease;
+  transform: translateY(32px);
+  transition: opacity .7s ease, transform .7s ease;
 }
 
 .illustration-wrapper.visible {
@@ -16,17 +15,14 @@
 }
 
 .illustration-img {
-  max-width: 500px;
+  width: var(--illu-width, clamp(100px, 18vw, 220px));
   height: auto;
-  animation: nudge 3s ease-in-out infinite;
+  object-fit: contain;
+  display: block;
+  animation: nudge 2s ease-in-out infinite 1.2s;
 }
 
-/* Nudging effekt der peger nedad */
 @keyframes nudge {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(12px);
-  }
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(10px); }
 }

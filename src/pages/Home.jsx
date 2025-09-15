@@ -12,9 +12,26 @@ export default function Home() {
       <Header />
       <Hero />
       <Welcome />
-      <Illustration /> {/* <- overlapper Welcome og Info fx */}
-      <Info />
-      <Projects />
+
+<Illustration
+  src="/images/illustration.png"
+  alt="Overgang mellem velkomst og info"
+  overlap="-15rem"
+  width="25px"
+  style={{ marginLeft: "700px" }}   // 👈 skubber lidt til højre
+/>
+
+<Info />
+
+<Illustration
+  src="/images/illustration-2.png"
+  alt="Overgang mellem info og projekter"
+  overlap="-8rem"
+  width="50px"
+  style={{ marginRight: "120px" }} // 👈 skubber lidt til venstre
+/>
+
+<Projects />
       <Footer />
     </>
   );

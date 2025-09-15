@@ -32,3 +32,5 @@ body{
   position:absolute!important;clip:rect(1px,1px,1px,1px);
   padding:0;border:0;height:1px;width:1px;overflow:hidden;white-space:nowrap;
 }
+
+.welcome, .info, .projects { overflow: visible; }
