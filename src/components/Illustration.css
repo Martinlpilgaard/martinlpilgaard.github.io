@@ -1,0 +1,32 @@
+.illustration-wrapper {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: -80px; /* træk den op over section ovenfor */
+  z-index: 10;       /* sikrer den overlapper */
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.illustration-wrapper.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.illustration-img {
+  max-width: 500px;
+  height: auto;
+  animation: nudge 3s ease-in-out infinite;
+}
+
+/* Nudging effekt der peger nedad */
+@keyframes nudge {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(12px);
+  }
+}

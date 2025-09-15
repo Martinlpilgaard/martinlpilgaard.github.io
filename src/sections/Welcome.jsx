@@ -29,12 +29,12 @@ export default function Welcome(){
         <ul className={styles.links}>
           <li>
             <Link to="/about">
-              <span className={styles.arrow} aria-hidden>↦</span> Lær mere om mig
+              <span className={styles.arrow} aria-hidden></span> Lær mere om mig
             </Link>
           </li>
           <li>
             <Link to="/projects">
-              <span className={styles.arrow} aria-hidden>↦</span> Se mine projekter
+              <span className={styles.arrow} aria-hidden></span> Se mine projekter
             </Link>
           </li>
         </ul>
