@@ -31,8 +31,8 @@
   position: relative;
   z-index: 2;
   min-height: 100vh;
-  margin-left: 300px;
-  margin-top: 100px;
+  margin-left: 450px;
+  margin-top: 80px;
 
   /* centrering */
   display: flex;
@@ -42,15 +42,15 @@
   padding: clamp(16px, 3vw, 40px);
   color: #222;
   font-family: "Poppins", system-ui, sans-serif;
-  line-height: 1.7;
+  line-height: 1.5;
   text-align: center; /* tekst centreres også */
 }
 
 .aboutinfo__textbox h3 {
   margin: 0;
-  font-weight: 300;
-  font-size: 1.2rem;
-  max-width: 600px;
+  font-weight: 200;
+  font-size: 1.1rem;
+  max-width: 480px;
 
   /* Nu kan du styre placering med marginer */
   margin-top: 600px;   /* fx prøv at sætte 100px */

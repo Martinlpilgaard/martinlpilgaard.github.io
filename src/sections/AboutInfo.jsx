@@ -19,14 +19,19 @@ export default function AboutInfo() {
       {/* Tekst ovenpå billedet */}
       <div className="aboutinfo__textbox">
         <h3>
-          Jeg er nysgerrig, idérig og elsker at samarbejde for at bringe idéer til liv.
-          <br/><br/>
-          Målet er at skabe visuelle universer der inspirerer og gør en forskel – og med min
-          frontend-erfaring kan jeg tage designet fra idé til virkelighed.
-          <br/><br/>
-          Udforsk projekterne, og se hvordan jeg arbejder med design, processer og storytelling –
-          og hvorfor jeg kan være et stærkt kort på jeres fremtidige team.
-        </h3>
+        Navnet er Martin, og jeg brænder for at skabe lækkert og gennemført design.
+    For mig er godt design mødet mellem kreativitet, kvalitet og formål og hvordan vi kan skabe noget værdifuldt der både er visuelt flot og funktionelt. 
+<br></br>
+<br></br>
+Motivationen for mit arbejde er af den grund muligheden for at arbejde intuitivt, og føre en ide ud i virkeligheden. Her gennem kreative processer hvor der er plads til at drømme stort, og hvor man i fællesskab kan opnå ambitiøse resultater.
+<br></br>
+        <br></br>
+Som person drives jeg af at mærke verden – hvad enten det sker gennem adrenalin i nye oplevelser eller i fællesskab med venner i hverdagen. Finder jeg her min inspiration og nyder at inddrage den i mit arbejde for at skabe noget meningsfuldt og unikt. 
+  <br></br>
+    <br></br>
+  Af den grund har jeg altid mig selv med i det jeg laver, og stræber, til enhver tid, efter at være nysgerrig, tage chancer og udvikle mine kompetencer.
+
+          </h3>
       </div>
     </section>
   );
