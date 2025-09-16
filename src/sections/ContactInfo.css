@@ -47,6 +47,18 @@
   margin-left: 500px;
   color: #111;
 }
+.contactinfo__heading a {
+  color: #111;              /* samme farve som din heading */
+  text-decoration: none;    /* ingen understregning */
+  transition: color 0.2s ease;
+}
+
+.contactinfo__heading a:hover {
+  color: #354F41;           /* grøn accent ved hover */
+  text-decoration: underline;    /* ingen understregning */
+}
+
+
 
 .contactinfo__title {
   font-family: "Modak", system-ui, sans-serif;

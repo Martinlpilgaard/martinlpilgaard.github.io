@@ -13,7 +13,9 @@ export default function ContactInfo() {
       <div className="contactinfo__overlay" aria-hidden="true" />
 
       <div className="contactinfo__textbox">
-        <h2 className="contactinfo__heading">martinlpilgaard@gmail.com</h2>
+       <h2 className="contactinfo__heading">
+        <a href="mailto:martinlpilgaard@gmail.com">martinlpilgaard@gmail.com</a>
+        </h2>
 
         {/* FANG MIG + pil i samme række */}
     
