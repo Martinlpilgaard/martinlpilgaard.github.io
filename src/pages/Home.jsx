@@ -26,9 +26,9 @@ export default function Home() {
 <Illustration
   src="/images/illustration-2.png"
   alt="Overgang mellem info og projekter"
-  overlap="-8rem"
+  overlap="-10rem"
   width="50px"
-  style={{ marginRight: "120px" }} // 👈 skubber lidt til venstre
+  style={{ marginRight: "750px" }} // 👈 skubber lidt til venstre
 />
 
 <Projects />

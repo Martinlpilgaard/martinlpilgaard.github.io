@@ -2,8 +2,9 @@
   position: relative;
   padding-top: 18px;
   
-  background: radial-gradient(1200px 520px at 50% -200px, rgba(255,255,255,0.85), rgba(255,255,255,0) 60%);
+  background: transparent;
   overflow: clip;
+  z-index: 100;
 }
 
 /* topbar */
@@ -13,11 +14,14 @@
   align-items: center;
 }
 
-.brand{
+.brand {
   display: inline-flex;
   align-items: center;
   gap: 12px;
+  text-decoration: none;   /* fjern understregning */
+  color: inherit;          /* behold farver som før */
 }
+
 .logoPh{
   inline-size: 44px;
   block-size: 44px;
@@ -44,6 +48,7 @@
 .nav a{
     font-family: "Poppins", system-ui, sans-serif; /* NY */
   font-weight: 300; 
+  text-decoration: none;
   color: var(--ink-soft);
   padding: 8px 2px;
   border-radius: 10px;

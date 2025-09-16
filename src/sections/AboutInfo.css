@@ -1,0 +1,62 @@
+/* wrapper – samme opskrift som din Home Info */
+.aboutinfo{
+  position: relative;
+  margin-top: -600px;
+  width: 100%;
+ height: 1500px;          /* fylder skærmen; kan ændres hvis ønsket */
+  z-index: 1;
+  overflow: hidden;            /* klip overskud */
+  background-color: #E8E8E8;
+}
+
+/* fuldflade billede */
+.aboutinfo__img{
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;           /* dækker uden at forvrænge (samme som Home) */
+}
+
+/* blød læsbarhed som på Home */
+.aboutinfo__overlay{
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* tekstboks i centrum */
+.aboutinfo__textbox {
+  position: relative;
+  z-index: 2;
+  min-height: 100vh;
+  margin-left: 300px;
+  margin-top: 100px;
+
+  /* centrering */
+  display: flex;
+  justify-content: center;  /* horisontalt */
+  align-items: center;      /* vertikalt */
+
+  padding: clamp(16px, 3vw, 40px);
+  color: #222;
+  font-family: "Poppins", system-ui, sans-serif;
+  line-height: 1.7;
+  text-align: center; /* tekst centreres også */
+}
+
+.aboutinfo__textbox h3 {
+  margin: 0;
+  font-weight: 300;
+  font-size: 1.2rem;
+  max-width: 600px;
+
+  /* Nu kan du styre placering med marginer */
+  margin-top: 600px;   /* fx prøv at sætte 100px */
+}
+
+/* responsiv padding just som på Home */
+@media (min-width: 860px){
+  .aboutinfo__textbox{ padding-left: 4rem; padding-right: 4rem; }
+}

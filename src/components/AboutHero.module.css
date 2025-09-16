@@ -1,0 +1,22 @@
+.hero{
+  /* samme “lette” hero som på Home: kun typografi, ingen bg */
+  display: grid;
+  place-items: center;
+  margin-left: 200px;
+  margin-top: -50px;
+  text-align: center;
+  padding: 4rem 1rem 2rem; /* lidt luft i bunden, så næste sektion kan “tucke” ind */
+  position: absolute;
+  z-index: 2;            /* ligger over billedsektionen under */
+  background: transparent;
+
+}
+.hero h1{
+ font-family: "Modak", system-ui, sans-serif;
+  font-weight: 400;   /* Regular */
+  letter-spacing: 0;
+  line-height: 1;
+  color: #354F41;
+  font-size: clamp(138px, 10vw, 120px);
+}
+

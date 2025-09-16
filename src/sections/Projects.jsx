@@ -19,7 +19,7 @@ export default function Projects() {
           title="Plakaten"
           size="pl"
           color="#3E3735"
-          hoverColor="#E34C31" // grøn
+          hoverColor="#E34C31" 
           className="icon-2"
         />
 
@@ -28,7 +28,7 @@ export default function Projects() {
           title="Bedrbeer"
           size="bb"
           color="#3E3735"
-          hoverColor="#1f3a34" 
+          hoverColor="#354F41" 
           className="icon-3"
         />
 
