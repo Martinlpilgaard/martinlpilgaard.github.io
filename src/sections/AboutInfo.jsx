@@ -29,7 +29,7 @@ Motivationen for mit arbejde er af den grund muligheden for at arbejde intuitivt
 Som person drives jeg af at mærke verden – hvad enten det sker gennem adrenalin i nye oplevelser eller i fællesskab med venner i hverdagen. Finder jeg her min inspiration og nyder at inddrage den i mit arbejde for at skabe noget meningsfuldt og unikt. 
   <br></br>
     <br></br>
-  Af den grund har jeg altid mig selv med i det jeg laver, og stræber, til enhver tid, efter at være nysgerrig, tage chancer og udvikle mine kompetencer.
+  Af den grund har jeg altid mig selv med i det jeg laver, og stræber til enhver tid, efter at være nysgerrig, tage chancer og udvikle mine kompetencer.
 
           </h3>
       </div>
