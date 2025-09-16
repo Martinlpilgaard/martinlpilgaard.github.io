@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Modak&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
 
+
 :root{
   --bg: #E8E8E8;
   --ink: #222;
@@ -34,3 +35,12 @@ body{
 }
 
 .welcome, .info, .projects { overflow: visible; }
+
+@font-face {
+  font-family: "Super Funky";          /* Navnet du bruger i CSS */
+  src: url("./assets/fonts/SuperFunky.woff2") format("woff2"),
+       url("./assets/fonts/SuperFunky.woff") format("woff");
+  font-weight: normal;                 /* eller 400, 700 alt efter fontens vægt */
+  font-style: normal;
+  font-display: swap;                  /* gør teksten synlig med fallback, mens font loader */
+}

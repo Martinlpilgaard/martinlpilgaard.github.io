@@ -1,0 +1,44 @@
+/* Wrapper til hele projekt-siden */
+.project-page {
+  padding: 2rem;
+  background: #E8E8E8;
+  min-height: 100vh;
+}
+
+/* Sektion */
+.project-section {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Titel med din custom font */
+.cillecyclus-title {
+  font-family: "Super Funky", system-ui, sans-serif;
+  font-size: 3.2rem;
+  font-weight: normal;
+  color: #3E3735;
+  margin-bottom: 3rem;
+  margin-right: 31rem;
+}
+
+/* Brødtekst */
+.project-section p {
+  font-family: "Poppins", system-ui, sans-serif;
+  font-style: italic;
+  font-weight: 200;
+  line-height: 1.6;
+  font-size: 1.2rem;
+  width: 375px;
+  color: #444;
+  margin-left: 4rem ;
+}
+
+/* Video */
+.project-section video {
+  margin-top: 6rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+  max-width: 100%;
+  height: auto;
+}
