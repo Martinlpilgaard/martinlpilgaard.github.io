@@ -1,4 +1,4 @@
-import bg from "../assets/Martin3.png"; // henter billedet fra src/assets
+import bg from "../assets/martin3.png"; // henter billedet fra src/assets
 import "./AboutInfo.css";
 
 export default function AboutInfo() {
