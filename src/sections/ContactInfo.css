@@ -52,7 +52,7 @@
   font-family: "Modak", system-ui, sans-serif;
   font-weight: 400;   /* Regular */
   font-size: 7rem;
-  margin-top: 20px;
+  margin-top: 30px;
   letter-spacing: 0;
   line-height: 1;
   color: #354F41;
@@ -63,7 +63,7 @@
   font-size: 17.5rem;
   letter-spacing: 0;
   line-height: 1;
-  margin-top: -9rem;
+  margin-top: -15.3rem;
   color: #354F41;
   margin-bottom: 400px;
 }
@@ -82,3 +82,17 @@
 .contactinfo__text a:hover {
   color: #ccc;
 }
+
+/* række til FANG MIG + pil */
+.contactinfo__headlineRow{
+  display: inline-flex;         /* så den måles efter indhold og kan centreres */
+  align-items: center;
+  gap: 12px;                    /* afstand mellem tekst og pil */
+}
+
+/* hvis du vil kunne skubbe rækken i hele boksen med margin: */
+.contactinfo__headlineRow{
+  margin-top: 8px;              /* finjustér */
+  /* fx: margin-left: 700px;  (kan også sættes inline hvis du vil) */
+}
+

@@ -1,0 +1,23 @@
+.arrowup {
+  display: inline-block;          /* kan stå ved siden af tekst */
+  width: var(--arrow-w, 40px);
+  height: var(--arrow-w, 40px);
+  transform: translateY(var(--arrow-overlap, 0)); /* fx -15rem */
+}
+
+.arrowup__img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
+
+  /* Din pil.png peger (formodentlig) allerede opad.
+     Hvis ikke, kan du rotere her: transform: rotate(0deg); */
+  animation: arrowup-nudge 2s ease-in-out infinite; /* blid nudge */
+}
+
+@keyframes arrowup-nudge {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-20px); }
+  100% { transform: translateY(0); }
+}
