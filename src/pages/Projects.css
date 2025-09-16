@@ -1,0 +1,26 @@
+.projects-stage {
+  position: relative;
+  min-height: 70vh;
+  padding: clamp(24px, 6vw, 64px) 0;
+  background: #f7f7f7;
+}
+
+.projects-title {
+  font-family: "Poppins", system-ui, sans-serif;
+  font-weight: 700;
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin: 0 0 2rem 0;
+  color: var(--ink, #111);
+  text-align: center;
+}
+
+.projects-placeholder {
+  display: grid;
+  place-items: center;
+  height: 40vh;
+  border: 2px dashed #ccc;
+  border-radius: 12px;
+  color: #777;
+  font-family: "Poppins", system-ui, sans-serif;
+  font-weight: 300;
+}
