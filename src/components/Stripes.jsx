@@ -16,7 +16,7 @@ import "./Stripes.css";
  */
 export default function Stripes({
   colors = [],
-  height = "8px",
+  height = "16px",
   gap = "14px",
   duration = "800ms",
   stagger = "110ms",

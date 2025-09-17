@@ -31,6 +31,15 @@
   margin-right: 31rem;
 }
 
+.cillecyclus-title3 {
+  font-family: "Super Funky", system-ui, sans-serif;
+  font-size: 7rem;
+  font-weight: normal;
+  color: #7D1928;
+  margin-top: 5rem;
+  margin-left: 8rem;
+}
+
 /* Brødtekst */
 .project-section p {
   font-family: "Poppins", system-ui, sans-serif;

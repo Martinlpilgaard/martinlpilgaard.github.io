@@ -60,13 +60,14 @@ export default function CilleCyclus() {
       "#8BA1BD",
       "#6F8095"
     ]}
-    lineHeight="12px"
+    lineHeight="22px"
     gap="14px"
     duration="1000ms"
     stagger="100ms"
     rounded={true}
   />
 </section>
+<h2 className="cillecyclus-title3">DESIGN</h2>
 
       </main>
       <Footer />
