@@ -4,7 +4,8 @@ import LoopVideo from "../components/LoopVideo";
 import CilleHero from "../components/CilleHero";
 import ArrowRight from "../components/ArrowRight";
 import CilleParallax from "../components/CilleParallax";  
-import Stripes from "../components/Stripes";               
+import Stripes from "../components/Stripes"; 
+import CilleDesign from "../sections/CilleDesign";              
 import "./CilleCyclus.css";
 
 export default function CilleCyclus() {
@@ -67,8 +68,14 @@ export default function CilleCyclus() {
     rounded={true}
   />
 </section>
-<h2 className="cillecyclus-title3">DESIGN</h2>
-
+<CilleDesign />
+{/* Video under CilleDesign */}
+<section className="cille-design-video" aria-label="Cille Design video">
+  <LoopVideo
+    src="/videos/cille-loop.mov"
+    className="rounded-2xl shadow-lg mt-6"
+  />
+</section>
       </main>
       <Footer />
     </>
