@@ -42,3 +42,19 @@
   max-width: 100%;
   height: auto;
 }
+
+.cille-hero-overlay {
+  position: absolute;
+  top: 100px;     /* justér så det ligger under navbar */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 5;     /* sørg for at den ligger over baggrunden men under header */
+  text-align: center;
+}
+
+.cille-hero-line {
+  font-family: "Super Funky", system-ui, sans-serif;
+  color: #222;
+  margin: 0.5rem 0;
+  margin-left: 40rem;
+}

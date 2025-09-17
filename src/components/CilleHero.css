@@ -1,0 +1,38 @@
+.cille-hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2rem 2rem;
+}
+
+.cille-hero h1.cille-hero-line {
+  font-size: 80px;
+  font-weight: 400;   /* Regular */
+  font-family: "Modak", system-ui, sans-serif;
+  color: #7D1928;
+}
+
+.cille-hero h2.cille-hero-line {
+  font-size: 150px;
+  font-weight: 400;
+  margin-top: -95px;
+  font-family: "Modak", system-ui, sans-serif;
+  color: #7D1928;
+}
+
+.cille-hero h3.cille-hero-line {
+  font-size: 115px;
+    font-weight: 400;   /* Regular */
+    margin-top: -120px;
+  color: #7D1928;
+  font-family: "Modak", system-ui, sans-serif;
+  margin-bottom: -450px;
+}
+
+/* Gør Modak gældende for alt inde i heroen */
+.cille-hero,
+.cille-hero * {
+  font-family: "Modak", system-ui, sans-serif;
+}
+
