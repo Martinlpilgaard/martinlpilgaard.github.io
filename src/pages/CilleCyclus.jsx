@@ -7,6 +7,7 @@ import CilleParallax from "../components/CilleParallax";
 import Stripes from "../components/Stripes"; 
 import CilleDesign from "../sections/CilleDesign";
 import CilleDesign2 from "../sections/CilleDesign2";
+import CilleDesign3 from "../sections/CilleDesign3";
 
 import "./CilleCyclus.css";
 
@@ -103,6 +104,7 @@ export default function CilleCyclus() {
     className="rounded-2xl shadow-lg mt-6"
   />
 </section>
+<CilleDesign3 />
       </main>
       <Footer />
     </>

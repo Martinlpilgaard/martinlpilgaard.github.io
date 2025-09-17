@@ -29,7 +29,7 @@ export default function CilleDesign2() {
               src="/images/altinfo.png"
               alt="Ekstra grafik"
               className="cilledesignimg7"
-            />
+            /> 
 
       </div>
     </section>
