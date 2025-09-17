@@ -25,6 +25,8 @@ export default function CilleCyclus() {
             src="/videos/loop-video.mp4"
             className="rounded-2xl shadow-lg mt-8"
           />
+          <h2 className="cillecyclus-title2">MEN-STRU-A-TION</h2>
+          
         </section>
       </main>
       <Footer />
