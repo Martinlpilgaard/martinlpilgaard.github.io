@@ -33,7 +33,7 @@
 
 .cillecyclus-title3 {
   font-family: "Super Funky", system-ui, sans-serif;
-  font-size: 7rem;
+  font-size: 6.5rem;
   font-weight: normal;
   color: #7D1928;
   margin-top: 5rem;
@@ -92,5 +92,17 @@
   margin-top: 2rem;
 }
 
+/* CilleDesign section */
+.cille-design {
+  text-align: center;
+  margin-block: 3rem;      /* luft over/under */
+}
+
+.cille-design__logo {
+  display: block;
+  width: clamp(180px, 30vw, 420px);  /* nem skalering */
+  height: auto;
+  margin: 1rem auto 0;               /* centrer */
+}
 
 
