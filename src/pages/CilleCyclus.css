@@ -27,7 +27,7 @@
   font-size: 3rem;
   font-weight: normal;
   color: #7D1928;
-  margin-top: 5rem;
+  margin-top: 10rem;
   margin-right: 31rem;
 }
 
@@ -67,3 +67,20 @@
   margin: 0.5rem 0;
   margin-left: 40rem;
 }
+
+.cille-arrow-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;  /* centrerer pil og billede under video */
+  gap: 5rem;
+  margin-top: -12rem;
+  margin-left: 30rem;
+}
+
+.cille-arrow-img {
+  width: 300px;   /* justér størrelsen her */
+  height: auto;
+  margin-top: 2rem;
+}
+
+

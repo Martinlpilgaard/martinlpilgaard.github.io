@@ -1,0 +1,19 @@
+.arrowright {
+  display: inline-block;
+  width: var(--arrow-w, 40px);
+  height: var(--arrow-w, 40px);
+}
+
+.arrowright__img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
+  animation: arrowright-nudge var(--arrow-duration, 2s) ease-in-out infinite;
+}
+
+@keyframes arrowright-nudge {
+  0%   { transform: translateX(0); }
+  50%  { transform: translateX(15px); }   /* 👈 nudge mod højre */
+  100% { transform: translateX(0); }
+}
