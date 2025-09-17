@@ -124,6 +124,24 @@
   margin-left: -10rem;
 }
 
+/* --- Video under CilleDesign (rammer KUN den nederste video) --- */
+.cille-design-video2 {
+  max-width: 350px;
+  margin: 4rem auto 0;
+  text-align: center;
+  padding: 0 1rem; /* lidt luft på små skærme */
+}
+
+/* Selve videonoden fra <LoopVideo> */
+.cille-design-video2 video {
+  margin-top: 1rem;                 /* mindre top-margin end den første video */
+  border-radius: 16px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-left: 20rem;
+}
+
 
 /* Små skærme: lidt mindre titel og luft */
 @media (max-width: 768px) {
