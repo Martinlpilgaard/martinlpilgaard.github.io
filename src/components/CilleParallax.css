@@ -1,9 +1,10 @@
 .cille-parallax{
   position: relative;
   width: 100%;
-  height: 45rem;           /* lidt lavere højde */
+  height: 46rem;           /* lidt lavere højde */
   background: #E8E8E8;
   overflow: hidden;
+  margin-bottom: 3rem;
 }
 
 /* basis for alle elementer */

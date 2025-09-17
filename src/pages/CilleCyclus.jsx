@@ -48,7 +48,7 @@ export default function CilleCyclus() {
         <CilleParallax />
 
         {/* 👇 NY sektion med striber */}
-       <section aria-label="Dekorative striber">
+       <section aria-label="Dekorative-striber">
   <Stripes
     colors={[
       "#801322",
@@ -63,7 +63,7 @@ export default function CilleCyclus() {
     lineHeight="12px"
     gap="14px"
     duration="1000ms"
-    stagger="110ms"
+    stagger="100ms"
     rounded={true}
   />
 </section>
