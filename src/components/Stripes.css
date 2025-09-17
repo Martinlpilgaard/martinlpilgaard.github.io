@@ -1,0 +1,40 @@
+.stripes-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap, 12px);
+  width: 120vw;          /* fuld bredde */
+  overflow: hidden;
+  padding: 20px 0;
+  margin-left: -35px
+
+}
+
+/* grundtilstand */
+.stripe {
+  width: 0%;   /* skjult */
+  height: var(--stripe-h, 6px);
+  background: var(--stripe-color, #333);
+  opacity: 0;
+  transform: translateX(-100%);
+}
+
+/* når container får .animate klassen */
+.animate .stripe {
+  animation: stripeIn var(--stripe-dur, 800ms) ease-out forwards;
+  opacity: 1;
+}
+
+/* forskudt animation */
+.animate .stripe:nth-child(odd) {
+  transform: translateX(-100%);
+}
+.animate .stripe:nth-child(even) {
+  transform: translateX(100%);
+}
+
+@keyframes stripeIn {
+  to {
+    width: 100%;
+    transform: translateX(0);
+  }
+}
