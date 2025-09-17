@@ -98,12 +98,22 @@
   margin-block: 3rem;      /* luft over/under */
 }
 
+.cilledesignimg0{
+  display: block;
+  width: 500px;  /* nem skalering */
+  height: auto;
+  margin-left: 4rem;
+  margin-top: -5rem;
+  margin-bottom: -25rem;
+}
+
 .cilledesignimg1{
   display: block;
   width: 400px;  /* nem skalering */
   height: auto;
-  margin-left: 38rem;
-  margin-top: -15rem;
+  margin-left: 40rem;
+  margin-top: -10rem;
+  margin-bottom: -5rem;
 }
 
 .cilledesignimg2{
@@ -164,6 +174,33 @@
   height: auto;
   margin-left: 32rem;
   margin-top: -25rem;
+}
+
+.cilledesignimg9{
+  display: block;
+  width: 200px;  /* nem skalering */
+  height: auto;
+  margin-left: -22rem;
+  margin-top: -17rem;
+  border-radius: 20px;
+}
+
+.cilledesignimg10{
+  display: block;
+  width: 190px;  /* nem skalering */
+  height: auto;
+  margin-left: -7rem;
+  margin-top: -11rem;
+  border-radius: 20px;
+}
+
+.cilledesignimg11{
+  display: block;
+  width: 300px;  /* nem skalering */
+  height: auto;
+  margin-left: 8rem;
+  margin-top: -13rem;
+  border-radius: 20px;
 }
 
 /* --- Video under CilleDesign (rammer KUN den nederste video) --- */

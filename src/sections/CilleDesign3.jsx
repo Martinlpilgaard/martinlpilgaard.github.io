@@ -10,6 +10,21 @@ export default function CilleDesign3() {
               alt="Ekstra grafik"
               className="cilledesignimg8"
             />
+         <img
+              src="/images/plakat1.png"
+              alt="Ekstra grafik"
+              className="cilledesignimg9"
+            />
+        <img
+              src="/images/plakat3.png"
+              alt="Ekstra grafik"
+              className="cilledesignimg10"
+            />
+        <img
+              src="/images/plakat2.png"
+              alt="Ekstra grafik"
+              className="cilledesignimg11"
+            />
        
       </div>
     </section>
