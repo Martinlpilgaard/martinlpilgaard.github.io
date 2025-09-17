@@ -11,6 +11,14 @@ export default function CilleDesign() {
               alt="Ekstra grafik"
               className="cilledesignimg1"
             />
+          
+            <img
+              src="/images/girlonbind.png"
+              alt="Ekstra grafik"
+              className="cilledesignimg2"
+            />
+
+            
     </section>
   );
 }

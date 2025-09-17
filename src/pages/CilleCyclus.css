@@ -106,6 +106,25 @@
   margin-top: -15rem;
 }
 
+.cilledesignimg2{
+  display: block;
+  width: 800px;  /* nem skalering */
+  height: auto;
+  rotate: 130deg;
+  margin-left: 30rem;
+  margin-top: -2rem;   
+}
+
+.cilledesignimg3{
+  display: block;
+  width: 650px;  /* nem skalering */
+  height: auto;
+  margin-left: -22rem;
+  margin-top: -18rem;
+
+
+}
+
 /* --- Video under CilleDesign (rammer KUN den nederste video) --- */
 .cille-design-video {
   max-width: 650px;
@@ -116,7 +135,7 @@
 
 /* Selve videonoden fra <LoopVideo> */
 .cille-design-video video {
-  margin-top: 1rem;                 /* mindre top-margin end den første video */
+  margin-top: -30rem;                 /* mindre top-margin end den første video */
   border-radius: 16px;
   max-width: 100%;
   height: auto;
@@ -152,6 +171,20 @@
     font-size: 1.8rem;
   }
 }
+
+/* CilleDesign2 section */
+.cille-design2 {
+  text-align: center;
+  margin-block: 3rem;
+}
+
+.cilledesign2-content {
+  display: block;
+  width: 400px; /* tilpas efter behov */
+  height: auto;
+  margin: 2rem auto 0;
+}
+
 
 
 
