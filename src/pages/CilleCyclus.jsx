@@ -96,6 +96,13 @@ export default function CilleCyclus() {
     className="rounded-2xl shadow-lg mt-6"
   />
 </section>
+{/* Endnu en video: cilletid */}
+<section className="cille-design-video4" aria-label="Cille Design tid video">
+  <LoopVideo
+    src="/videos/mood.mp4"
+    className="rounded-2xl shadow-lg mt-6"
+  />
+</section>
       </main>
       <Footer />
     </>
