@@ -88,6 +88,14 @@ export default function CilleCyclus() {
   />
 </section>
 <CilleDesign2 />
+
+{/* Endnu en video: cilletid */}
+<section className="cille-design-video3" aria-label="Cille Design tid video">
+  <LoopVideo
+    src="/videos/luteal.mp4"
+    className="rounded-2xl shadow-lg mt-6"
+  />
+</section>
       </main>
       <Footer />
     </>
