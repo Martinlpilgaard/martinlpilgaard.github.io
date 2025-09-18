@@ -13,7 +13,7 @@ export default function BedrDesign() {
          <img src="/images/bedrlogovar.png"  alt="Ekstra grafik" className="bedrimg21" />
         <img src="/images/bedrskitse.png"  alt="Ekstra grafik" className="bedrimg22" />
 
-        <img src="/images/ikonerstreg.png" alt="Ekstra grafik" className="bedrimg2" />
+        <img src="/images/streg.png" alt="Ekstra grafik" className="bedrimg2" />
         <img src="/images/bikoner.svg"   alt="Ekstra grafik" className="bedrimg3" />
       </section>
 
