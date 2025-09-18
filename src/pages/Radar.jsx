@@ -1,7 +1,8 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import VideoPlayer from "../components/VideoPlayer";
-import RadarHero from "../components/RadarHero";     // helt ny hero-komponent
+import RadarHero from "../components/RadarHero";   
+import Stripes from "../components/Stripes";
 import "./Radar.css";
 
 export default function Radar() {
@@ -34,7 +35,7 @@ export default function Radar() {
 
 
           <VideoPlayer
-            src="/videos/radar-intro.mp4"      // ← læg din fil i public/videos/
+            src="/videos/radarhome.mp4"      // ← læg din fil i public/videos/
             className="radar-video"
           />
 
@@ -42,6 +43,27 @@ export default function Radar() {
             Event-oversigt med rytme, bevægelse og filtrering
           </h3>
         </section>
+
+
+                <section aria-label="Dekorative striber">
+                  <Stripes
+                    colors={[
+                      "#322E27",
+                      "#EE185C",
+                      "#3EC2D0",
+                      "#800DEC",
+                      "#FF82E7",
+                      "#0A5066",
+                      "#F6B5D1",
+                      "#8CEAEA",
+                    ]}
+                    height="20px"
+                    gap="14px"
+                    duration="1000ms"
+                    stagger="100ms"
+                    rounded={true}
+                  />
+                </section>
       </main>
       <Footer />
     </>
