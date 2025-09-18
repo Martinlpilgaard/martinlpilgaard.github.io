@@ -65,23 +65,41 @@
   max-width: 70ch;
   line-height: 1.6;
   opacity: 0.9;
-  margin-bottom: 32px;
+  margin-bottom: 2px;
   margin-left: 38rem; /* højrejusteret blok */
 }
 
 .plakaten-image {
   display: block;
-  width: 180px;
+  width: 150px;
   height: auto;
-  margin-top: 4rem;
+  margin-top: 2rem;
   margin-bottom: -18rem;
   margin-left: 38rem;
 }
 
+.plakaten-image1 {
+  display: block;
+  width: 300px;
+  height: auto;
+  margin-top: -35rem;
+  margin-bottom: -18rem;
+   border-radius: 16px;
+  margin-left: 48rem;
+}
+.plakaten-image2 {
+  display: block;
+  width: 650px;
+  height: auto;
+  margin-top: -15rem;
+  margin-bottom: 18rem;
+   border-radius: 16px;
+  margin-left: 3rem;
+}
+
 .plakaten-video {
   display: block;
-  margin-top: -2rem;
-  margin-left: -10rem;
+  margin-top: 4rem;
   border-radius: 16px;
   max-width: 100%;
   height: auto;
@@ -89,7 +107,54 @@
   margin-bottom: 15rem;
 }
 
-.plakaten-section-caption {
-  font-size: clamp(14px, 1.2vw, 16px);
+.plakaten-video-video2 {
+display: block;
+  width: 50%;
+  height: auto;
+  margin-top: 5rem;
+  margin-bottom: 30rem;
+  margin-left: 4rem;
+  border-radius: 16px;
+}
+
+.plakaten-video-video3 {
+display: block;
+  width: 50%;
+  height: auto;
+  margin-top: 5rem;
+  margin-bottom: 30rem;
+  margin-left: 8rem;
+  border-radius: 16px;
+}
+
+.plakaten-video-video4 {
+display: block;
+  width: 20%;
+  height: auto;
+  margin-top: -10rem;
+  margin-bottom: 10rem;
+  margin-left: 45rem;
+  border-radius: 16px;
+}
+
+.plakaten-caption {
+  font-size: 12px;
   opacity: 0.8;
+  margin-top: -14rem;
+  margin-left: 1rem;
+}
+
+.plakaten-caption2 {
+  font-size: 12px;
+  opacity: 0.8;
+  margin-top: -29rem;
+  margin-left: 8rem;
+}
+
+.plakaten-caption3 {
+  font-size: 12px;
+  opacity: 0.8;
+  margin-top: -17rem;
+  margin-left: 31rem;
+  margin-bottom: 5rem;
 }
