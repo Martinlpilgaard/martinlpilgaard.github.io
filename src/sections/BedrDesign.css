@@ -17,26 +17,26 @@ font-weight: 900;
 
 .bedrimg1 {
 display: block;
-  width: 450px;  /* nem skalering */
+  width: 350px;  /* nem skalering */
   height: auto;
-  margin-left: 40rem;
-  margin-top: -10rem;
+  margin-left: 45rem;
+  margin-top: -15rem;
 
 }
 .bedrimg2 {
 display: block;
   width: 420px;  /* nem skalering */
   height: auto;
-  margin-top: -25rem;
-  margin-left: 10rem;
+  margin-top: 2rem;
+  margin-left: 0rem;
 
 }
 .bedrimg3 {
 display: block;
-  width: 1000px;  /* nem skalering */
+  width: 700px;  /* nem skalering */
   height: auto;
-  margin-top: 5rem;
-  margin-left: 5rem;
+  margin-top: -12rem;
+  margin-left: 28rem;
 }
 
 /* Full-bleed wrapper der bryder ud af center-containeren */
@@ -73,4 +73,27 @@ display: block;
   height: auto;
   margin-left: 30rem;
   margin-top: -7rem;
+}
+
+.bedrimg20 {
+display: block;
+  width: 550px;  /* nem skalering */
+  height: auto;
+  margin-left: 30rem;
+  margin-top: 1rem;
+}
+.bedrimg21 {
+display: block;
+  width: 400px;  /* nem skalering */
+  height: auto;
+  margin-left: 20rem;
+  margin-top: -30rem;
+}
+
+.bedrimg22 {
+display: block;
+  width: 240px;  /* nem skalering */
+  height: auto;
+  margin-left: 3rem;
+  margin-top: -12rem;
 }

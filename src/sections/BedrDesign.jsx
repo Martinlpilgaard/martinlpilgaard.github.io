@@ -8,6 +8,11 @@ export default function BedrDesign() {
         <h2 className="bedrdesign1">DESIGN</h2>
 
         <img src="/images/bedrlogo.png"  alt="Ekstra grafik" className="bedrimg1" />
+
+         <img src="/images/bedrideer.png"  alt="Ekstra grafik" className="bedrimg20" />
+         <img src="/images/bedrlogovar.png"  alt="Ekstra grafik" className="bedrimg21" />
+        <img src="/images/bedrskitse.png"  alt="Ekstra grafik" className="bedrimg22" />
+
         <img src="/images/ikonerstreg.png" alt="Ekstra grafik" className="bedrimg2" />
         <img src="/images/bikoner.svg"   alt="Ekstra grafik" className="bedrimg3" />
       </section>

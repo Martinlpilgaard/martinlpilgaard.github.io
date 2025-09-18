@@ -4,6 +4,7 @@ import VideoPlayer from "../components/VideoPlayer";
 import Stripes from "../components/Stripes";
 import BeerHero from "../components/BeerHero"; 
 import BedrDesign from "../sections/BedrDesign"; 
+import BedrDesign2 from "../sections/BedrDesign2"; 
 import BedrUx from "../sections/BedrUx";    
 import "./BedrBeer.css";
 
@@ -13,7 +14,7 @@ export default function BedrBeer() {
       <Header />
 
        {/* HERO øverst – vælg farve frit */}
-      <BeerHero color="#E96A4D" line1="MÅLRETTET" line2="BRAND" line3="IDENTITET" />
+      <BeerHero color="#354F41" line1="MÅLRETTET" line2="BRAND" line3="IDENTITET" />
 
       <main className="bedrbeer-project-page">
         <section className="project-section">
@@ -69,7 +70,8 @@ export default function BedrBeer() {
             src="/videos/heleudvalg.mp4"   // ← læg fil i public/videos/
             className="rounded-2xl shadow-lg mt-8"
           />
-        </section>
+           </section>
+        <BedrDesign2 />
       </main>
       <Footer />
     </>

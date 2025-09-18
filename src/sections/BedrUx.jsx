@@ -18,7 +18,7 @@ export default function BedrUx() {
               className="bedruximg2"
             />
          <img
-              src="/images/BedrMoodboard.png"
+              src="/images/bedrMoodboard.png"
               alt="Ekstra grafik"
               className="bedruximg3"
             /> 

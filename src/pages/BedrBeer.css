@@ -67,6 +67,14 @@ font-style: italic;
   margin-bottom: -18rem;
   margin-left: 38rem;
 }
+.bederbeer-infoimg {
+    width: 275px;
+    display: block;
+    margin-left: 3rem;
+    margin-top: 2rem;
+    margin-bottom: -6rem;
+
+}
 
 .bedrbeer-video-wrapper {
  margin-top: -2rem;
