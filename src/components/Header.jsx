@@ -6,9 +6,14 @@ export default function Header({ style }) {
     <header className={styles.header} style={style}>
       <div className={`container ${styles.bar}`}>
         
-        {/* Gør brand/logo til et link hjem */}
-        <NavLink to="/" className={styles.brand}>
-          <div className={styles.logoPh} aria-label="Logo placeholder" />
+       {/* Brand/logo linker hjem */}
+        <NavLink to="/" className={styles.brand} aria-label="Gå til forsiden">
+          <img
+            src="/images/mlplogo.svg"       // ← læg filen i /public/images/
+            alt="Martin L Pilgaard logo"
+            className={styles.logo}         // ← ny css-klasse
+          />
+          
           <div className={styles.brandText}>
             <strong>Martin L</strong>
             <span>Pilgaard</span>

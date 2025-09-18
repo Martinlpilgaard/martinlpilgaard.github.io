@@ -1,6 +1,6 @@
 .header{
   position: relative;
-  padding-top: 18px;
+  padding-top: 30px;
   
   background: transparent;
   overflow: clip;
@@ -22,14 +22,13 @@
   color: inherit;          /* behold farver som før */
 }
 
-.logoPh{
-  inline-size: 44px;
-  block-size: 44px;
-  border-radius: 12px;
-  background: #fff8;
-  outline: 2px dashed #0003;
-  outline-offset: 3px;
+.logo {
+  inline-size: 44px;   /* svarer til width */
+  block-size: 44px;    /* svarer til height */
+  display: block;
+  object-fit: contain; /* bevar proportioner */
 }
+
 .brandText{
   display:flex;
   flex-direction:column;
