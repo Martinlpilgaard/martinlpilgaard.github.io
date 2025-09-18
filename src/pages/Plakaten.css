@@ -1,0 +1,95 @@
+/* ======= HERO (unik prefix: plakat-hero*) ======= */
+.plakat-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* venstrestillet */
+  justify-content: center;
+  gap: 0;
+  max-width: 1200px;
+  margin-left: 150px;
+  margin-top: 140px;
+  padding: 40px 20px 24px;
+  margin-bottom: -50px;
+}
+
+.plakat-hero-line {
+  font-family: "Modak", system-ui, sans-serif;
+  font-weight: 400;
+  line-height: 0.9;
+  color: var(--plakat-hero-color, #222C3A);
+  margin: 0;
+}
+
+.plakat-hero-h1 { font-size: 75px; }
+.plakat-hero-h2 { font-size: 162px; margin-top: -1.1rem; }
+.plakat-hero-h3 { font-size: 135px; margin-top: -2rem; }
+
+@media (max-width: 640px) {
+  .plakat-hero-h2 { margin-top: -0.35em; }
+  .plakat-hero-h3 { margin-top: -0.28em; }
+}
+
+/* ======= PAGE (plakat-*) ======= */
+.plakat-page {
+  min-height: 100vh;
+  color: #222;
+  background: #E8E8E8;
+}
+
+.plakat-section {
+  padding: 3rem 6vw;
+}
+
+/* ======= Typografi + content (plakaten-*) ======= */
+.plakaten-title {
+  font: italic 800 clamp(36px, 5vw, 72px) "Poppins", system-ui, sans-serif;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  margin-top:-20rem;
+  margin-left: 40rem;
+  color: #444;
+}
+
+.plakaten-subtitle {
+  font: italic 800 35px "Poppins", system-ui, sans-serif;
+  margin-top: 15.5rem;
+  margin-left: 50rem;
+  color: #444;
+}
+
+.plakaten-project-intro {
+  font-size: clamp(16px, 1.6vw, 20px);
+  font-family: "Poppins", system-ui, sans-serif;
+  font-style: italic;
+  font-weight: 200;
+  max-width: 70ch;
+  line-height: 1.6;
+  opacity: 0.9;
+  margin-bottom: 32px;
+  margin-left: 38rem; /* højrejusteret blok */
+}
+
+.plakaten-image {
+  display: block;
+  width: 180px;
+  height: auto;
+  margin-top: 4rem;
+  margin-bottom: -18rem;
+  margin-left: 38rem;
+}
+
+.plakaten-video {
+  display: block;
+  margin-top: -2rem;
+  margin-left: -10rem;
+  border-radius: 16px;
+  max-width: 100%;
+  height: auto;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+  margin-bottom: 15rem;
+}
+
+.plakaten-section-caption {
+  font-size: clamp(14px, 1.2vw, 16px);
+  opacity: 0.8;
+}
