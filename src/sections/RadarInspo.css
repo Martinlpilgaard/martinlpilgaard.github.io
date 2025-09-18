@@ -1,0 +1,62 @@
+
+
+.radarinspo-section{
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-left: 10rem;
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.radarinspo-section h2{
+font-family: "Poppins", system-ui, sans-serif;
+  font-style: italic;
+   color: #444;
+   font-weight: 900;
+}
+
+
+.radarinspoimg1 {
+display: block;
+  width: 950px;  /* nem skalering */
+  height: auto;
+  border-radius: 16px;
+}
+
+.radarinspoimg2 {
+display: block;
+  width: 300px;  /* nem skalering */
+  height: auto;
+  border-radius: 16px;
+  margin-left: -1rem;
+  margin-top: 7rem;
+}
+.radarinspoimg3 {
+display: block;
+  width: 300px;  /* nem skalering */
+  height: auto;
+  border-radius: 16px;
+  margin-top: -35rem;
+   margin-left: 20rem;
+  margin-bottom: 5rem;
+}
+
+.radarinspoimg4 {
+display: block;
+  width: 300px;  /* nem skalering */
+  height: auto;
+  border-radius: 16px;
+  margin-top: -25rem;
+  margin-bottom: 5rem;
+    margin-left: 42rem;
+}
+
+.radarinspoimg5 {
+display: block;
+  width: 700px;  /* nem skalering */
+  height: auto;
+  border-radius: 16px;
+  margin-top: -28rem;
+  margin-bottom: 5rem;
+  margin-left: -3rem;
+}
