@@ -12,6 +12,7 @@ export default function CilleDesign() {
               alt="Ekstra grafik"
               className="cilledesignimg0"
             />
+          <h6>CILLE - Gennemgående personificeret karakter til menneskeliggørelse af emnet Menstruation</h6> 
           <img
               src="/images/cillelogo.svg"
               alt="Ekstra grafik"

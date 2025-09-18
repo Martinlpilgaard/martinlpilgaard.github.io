@@ -31,6 +31,7 @@ export default function CilleCyclus() {
             src="/videos/loop-video.mp4"
             className="rounded-2xl shadow-lg mt-8"
           />
+          <h3>Relaterbar smerteskala for unge</h3>
 
           <h2 className="cillecyclus-title2">MEN-STRU-A-TION</h2>
 
@@ -71,7 +72,6 @@ export default function CilleCyclus() {
     rounded={true}
   />
 </section>
-
 <CilleDesign />
 {/* Video under CilleDesign */}
 <section className="cille-design-video" aria-label="Cille Design video">
@@ -88,6 +88,7 @@ export default function CilleCyclus() {
     className="rounded-2xl shadow-lg mt-6"
   />
 </section>
+ <h5>Fortællinger om menstruation i forskellige tidsaldre</h5>
 <CilleDesign2 />
 
 {/* Endnu en video: cilletid */}
@@ -104,6 +105,7 @@ export default function CilleCyclus() {
     className="rounded-2xl shadow-lg mt-6"
   />
 </section>
+ <h4>Branding og brug af karakter</h4>
 <CilleDesign3 />
       </main>
       <Footer />
