@@ -4,13 +4,24 @@
   color: #f8f8f8;
 }
 
+.project-intro{
+  font-size: clamp(16px, 1.6vw, 20px);
+  max-width: 70ch;          /* behold smal tekstkolonne */
+  line-height: 1.6;
+  opacity: 0.9;
+  margin-bottom: 32px;
+
+  align-self: flex-end;     /* ← skub blokken til højre i en column-flex */
+  text-align: right;        /* ← linjer højrejusteres */
+  /* fjern evt. margin-left:auto her */
+}
+
 .project-section {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 64px 24px;
   display: flex;
   flex-direction: column;
+  align-items: flex-start;   /* børn strækkes ikke automatisk */
 }
+
 
 /* Typografi */
 .bedrbeer-title {
@@ -19,9 +30,8 @@ font-style: italic;
   font-size: clamp(36px, 5vw, 72px);
   font-weight: 800;
   line-height: 1.1;
-  margin-top: -5px;
   margin-bottom: 24px;
-  margin-left: -30rem;
+  margin-left:40rem;
   letter-spacing: -0.02em;
   color: #444;
 }
@@ -31,17 +41,18 @@ font-style: italic;
 font-style: italic;
   font-size: 35px;
   font-weight: 800;
-  margin-top: 9.5rem;
-  margin-right: 16rem;
+  margin-top: 15.5rem;
+  margin-left: 50rem;
   color: #444;
 }
 
-.project-intro {
+.project-intro{
   font-size: clamp(16px, 1.6vw, 20px);
   max-width: 70ch;
   opacity: 0.9;
   margin-bottom: 32px;
   line-height: 1.6;
+  margin-left: auto;   /* ← skubber boksen helt til højre */
 }
 
 /* Media */
@@ -50,26 +61,27 @@ font-style: italic;
   width:150px;  /* nem skalering */
   height: auto;
   margin-top: 4rem;
-  margin-bottom: -12rem;
-  margin-left: 4rem;
+  margin-bottom: -18rem;
+  margin-left: 38rem;
 }
 
 .video-wrapper {
- margin-top: 6rem;
+ margin-top: -2rem;
   border-radius: 16px;
   box-shadow: 0 8px 24px rgba(0,0,0,0.15);
   max-width: 100%;
   height: auto;
-  margin-bottom: -1rem;
+  margin-bottom: 15rem;
 }
 .video-wrapper video {
-   margin-top: -30rem;                 /* mindre top-margin end den første video */
+   margin-top: -20rem;                 /* mindre top-margin end den første video */
   border-radius: 16px;
   max-width: 100%;
   height: auto;
   display: block;
   margin-left: -10rem;
 }
+
 .video-wrapper video:hover {
   transform: scale(1.01);
 
@@ -77,6 +89,7 @@ font-style: italic;
 
 .section-caption {
   margin-top: 20px;
+  margin-bottom: 60px;
   margin-left: -15px;
   font-size: 0.8rem;
   font-weight: 400;

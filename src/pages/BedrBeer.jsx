@@ -12,9 +12,9 @@ export default function BedrBeer() {
         <section className="project-section">
           <h1 className="bedrbeer-title">BEDR BEER</h1>
           <p className="project-intro">
-            Hvordan skaber man en brandidentitet, der både tiltrækker unge, loyale forbrugere
+            "Hvordan skaber man en brandidentitet, der både tiltrækker unge, loyale forbrugere
             med interesse for alkoholfrie øl-alternativer, og samtidig appellerer til dem, der
-            normalt er mere skeptiske?
+            normalt er mere skeptiske?""
           </p>
 
           <img

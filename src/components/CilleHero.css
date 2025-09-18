@@ -3,7 +3,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding: 2rem 2rem;
 }
 
 .cille-hero h1.cille-hero-line {
@@ -11,7 +10,7 @@
   font-weight: 400;   /* Regular */
   font-family: "Modak", system-ui, sans-serif;
   color: #7D1928;
-  margin-top: 5rem;
+  margin-top: -5rem;
 }
 
 .cille-hero h2.cille-hero-line {
@@ -28,7 +27,7 @@
     margin-top: -120px;
   color: #7D1928;
   font-family: "Modak", system-ui, sans-serif;
-  margin-bottom: -450px;
+  margin-bottom: -750px;
 }
 
 /* Gør Modak gældende for alt inde i heroen */
