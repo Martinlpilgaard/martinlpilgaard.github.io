@@ -3,7 +3,8 @@ import Footer from "../components/Footer";
 import VideoPlayer from "../components/VideoPlayer";
 import Stripes from "../components/Stripes";
 import BeerHero from "../components/BeerHero"; 
-import BedrDesign from "../sections/BedrDesign";     
+import BedrDesign from "../sections/BedrDesign"; 
+import BedrUx from "../sections/BedrUx";    
 import "./BedrBeer.css";
 
 export default function BedrBeer() {
@@ -41,6 +42,8 @@ export default function BedrBeer() {
           </h3>
         </section>
 
+        <BedrUx/>
+        
         <section aria-label="Dekorative striber">
           <Stripes
             colors={[

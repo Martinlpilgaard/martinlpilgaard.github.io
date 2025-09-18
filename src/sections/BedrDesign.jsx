@@ -8,7 +8,7 @@ export default function BedrDesign() {
       <h2 className="bedrdesign1">DESIGN</h2>
 
        <img
-              src="/images/.svg"
+              src="/imagesbedrlogo.svg"
               alt="Ekstra grafik"
               className="bedrimg1"
             /> 
