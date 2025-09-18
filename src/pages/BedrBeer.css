@@ -1,0 +1,108 @@
+/* Layout */
+.project-page {
+  min-height: 100vh;
+  color: #f8f8f8;
+}
+
+.project-section {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 64px 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Typografi */
+.bedrbeer-title {
+font-family: "Poppins", system-ui, sans-serif;
+font-style: italic;
+  font-size: clamp(36px, 5vw, 72px);
+  font-weight: 800;
+  line-height: 1.1;
+  margin-top: -5px;
+  margin-bottom: 24px;
+  margin-left: -30rem;
+  letter-spacing: -0.02em;
+  color: #444;
+}
+
+.bedrbeer-subtitle {
+  font-family: "Poppins", system-ui, sans-serif;
+font-style: italic;
+  font-size: 35px;
+  font-weight: 800;
+  margin-top: 9.5rem;
+  margin-right: 16rem;
+  color: #444;
+}
+
+.project-intro {
+  font-size: clamp(16px, 1.6vw, 20px);
+  max-width: 70ch;
+  opacity: 0.9;
+  margin-bottom: 32px;
+  line-height: 1.6;
+}
+
+/* Media */
+.kundeimg {
+    display: block;
+  width:150px;  /* nem skalering */
+  height: auto;
+  margin-top: 4rem;
+  margin-bottom: -12rem;
+  margin-left: 4rem;
+}
+
+.video-wrapper {
+ margin-top: 6rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+  max-width: 100%;
+  height: auto;
+  margin-bottom: -1rem;
+}
+.video-wrapper video {
+   margin-top: -30rem;                 /* mindre top-margin end den første video */
+  border-radius: 16px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-left: -10rem;
+}
+.video-wrapper video:hover {
+  transform: scale(1.01);
+
+}
+
+.section-caption {
+  margin-top: 20px;
+  margin-left: -15px;
+  font-size: 0.8rem;
+  font-weight: 400;
+  opacity: 0.8;
+  font-style: italic;
+}
+
+/* ColorStripes */
+.stripes {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin: 64px 0;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.stripe {
+  width: 100%;
+  height: 22px;
+  border-radius: 999px;
+  animation: stripe-pop 1s ease forwards;
+}
+
+@keyframes stripe-pop {
+  from { transform: scaleX(0); opacity: 0; }
+  40%  { opacity: 1; }
+  to   { transform: scaleX(1); opacity: 1; }
+}
