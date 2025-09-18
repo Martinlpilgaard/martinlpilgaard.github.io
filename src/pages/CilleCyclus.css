@@ -28,8 +28,8 @@
   font-weight: normal;
   color: #3E3735;
   margin-bottom: 0rem;
-  margin-top: 7rem;
-  margin-right: 20rem;
+  margin-top: -2rem;
+  margin-right: 18rem;
 }
 
 .cillecyclus-title2 {
@@ -282,6 +282,16 @@ h5 {
   margin-top: -13rem;
   border-radius: 20px;
 }
+
+.cilledesignimg13{
+  display: block;
+  width: 150px;  /* nem skalering */
+  height: auto;
+  margin-left: 4rem;
+  margin-top: 4rem;
+  margin-bottom: 0rem;
+}
+
 
 /* --- Video under CilleDesign (rammer KUN den nederste video) --- */
 .cille-design-video {

@@ -27,6 +27,13 @@ export default function CilleCyclus() {
             og unge?"
           </p>
 
+          <img
+              src="/images/kunde.png"
+              alt="Ekstra grafik"
+              className="cilledesignimg13"
+            />
+            <h1 className="cillecyclus-title0">STENO-MUSEET</h1>
+
           <LoopVideo
             src="/videos/loop-video.mp4"
             className="rounded-2xl shadow-lg mt-8"
