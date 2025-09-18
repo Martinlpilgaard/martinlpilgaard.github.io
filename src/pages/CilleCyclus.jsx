@@ -21,7 +21,7 @@ export default function CilleCyclus() {
 
         <section className="project-section">
           <h1 className="cillecyclus-title">Cilles Cyklus</h1>
-          <p>
+          <p class= "cille-project-section">
             "Hvordan kan man skabe et interaktivt formidlingselement til en
             udstilling om menstruation og kvindekroppens cyklus, målrettet børn
             og unge?"

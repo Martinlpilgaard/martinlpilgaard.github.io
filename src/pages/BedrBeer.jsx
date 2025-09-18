@@ -1,17 +1,23 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import VideoPlayer from "../components/VideoPlayer";
-import Stripes from "../components/Stripes"; 
+import Stripes from "../components/Stripes";
+import BeerHero from "../components/BeerHero"; 
+import BedrDesign from "../sections/BedrDesign";     
 import "./BedrBeer.css";
 
 export default function BedrBeer() {
   return (
     <>
       <Header />
-      <main className="project-page">
+
+       {/* HERO øverst – vælg farve frit */}
+      <BeerHero color="#E96A4D" line1="MÅLRETTET" line2="BRAND" line3="IDENTITET" />
+
+      <main className="bedrbeer-project-page">
         <section className="project-section">
           <h1 className="bedrbeer-title">BEDR BEER</h1>
-          <p className="project-intro">
+          <p className="bedrbeer-project-intro">
             "Hvordan skaber man en brandidentitet, der både tiltrækker unge, loyale forbrugere
             med interesse for alkoholfrie øl-alternativer, og samtidig appellerer til dem, der
             normalt er mere skeptiske?""
@@ -20,7 +26,7 @@ export default function BedrBeer() {
           <img
             src="/images/kunde.png"  // ← læg fil i public/images/
             alt="Kunde/partner"
-            className="kundeimg"
+            className="bedrbeer-kundeimg"
           />
 
           <h2 className="bedrbeer-subtitle">BEDR BEER</h2>
@@ -30,7 +36,7 @@ export default function BedrBeer() {
             className="rounded-2xl shadow-lg mt-8"
           />
 
-          <h3 className="section-caption">
+          <h3 className="bedrbeer-section-caption">
             Landingpage med kampagne og interaktiv 3D-visualisering af dåse
           </h3>
         </section>
@@ -54,6 +60,7 @@ export default function BedrBeer() {
             rounded={true}
           />
         </section>
+        <BedrDesign />
       </main>
       <Footer />
     </>

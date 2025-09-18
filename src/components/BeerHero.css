@@ -1,0 +1,30 @@
+/* Sørg for at Modak er loadet globalt (fx via <link href="https://fonts.googleapis.com/css2?family=Modak&display=swap" rel="stylesheet"> ) */
+
+.beer-hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;     /* hold alt til venstre */
+  gap: 0;
+  margin-left: 8rem;
+  margin-bottom: -23rem;
+}
+
+/* Fælles stil for linjer */
+.beer-hero-line {
+  font-family: "Modak", system-ui, sans-serif;
+  font-weight: 400;
+  line-height: 0.9;
+  color: var(--beer-hero-color); /* kan override via prop eller root */
+  margin: 0;
+}
+
+/* Størrelser – inspireret af CilleHero men egne klasser */
+.beer-hero-h1 { font-size: 5.1rem; margin-top: 10rem; }
+.beer-hero-h2 { font-size:8.8rem ; margin-top: -0.16em; }
+.beer-hero-h3 { font-size: 5.6rem; margin-top: -0.24em; }
+
+@media (max-width: 640px) {
+  .beer-hero-h2 { margin-top: -0.4em; }
+  .beer-hero-h3 { margin-top: -0.35em; }
+}
