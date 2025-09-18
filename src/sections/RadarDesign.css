@@ -1,0 +1,65 @@
+
+.radardesign-section{
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-left: 5rem;
+  font-size: 100px;
+  margin-top: -5rem;
+  margin-bottom: -15rem;
+  height: 200vh;
+}
+
+.radardesign1 {
+ font-family: "Poppins", system-ui, sans-serif;
+font-style: italic;
+color: #444;
+font-weight: 200;
+margin-left: 5rem;
+font-weight: 900;
+}
+
+.radarimg1 {
+display: block;
+  width: 350px;  /* nem skalering */
+  height: auto;
+  margin-left: 45rem;
+  margin-top: -15rem;
+}
+
+.radarimg2 {
+display: block;
+  width: 400px;  /* nem skalering */
+  height: auto;
+  margin-left: 5rem;
+  margin-top: -15rem;
+}
+
+.radarimg3 {
+display: block;
+  width: 300px;  /* nem skalering */
+  height: auto;
+  margin-left: 32rem;
+  margin-top: -10rem;
+}
+.radarimg4 {
+display: block;
+  width: 1100px;  /* nem skalering */
+  height: auto;
+  margin-top: 5rem;
+}
+
+.radarimg5 {
+display: block;
+  width: 400px;  /* nem skalering */
+  height: auto;
+  margin-top: 0rem;
+  margin-left: 44rem;
+}
+
+.radarimg6 {
+display: block;
+  width: 800px;  /* nem skalering */
+  height: auto;
+  margin-top: -2rem;
+  margin-left: 10rem;
+}

@@ -4,6 +4,7 @@ import VideoPlayer from "../components/VideoPlayer";
 import RadarHero from "../components/RadarHero";   
 import Stripes from "../components/Stripes";
 import RadarInspo from "../sections/RadarInspo";  
+import RadarDesign from "../sections/RadarDesign";
 
 import "./Radar.css";
 
@@ -65,6 +66,13 @@ export default function Radar() {
                     rounded={true}
                   />
                 </section>
+            <RadarDesign/>
+        <section className="radar-section2">
+         <VideoPlayer
+            src="/videos/join.mp4"      // ← læg din fil i public/videos/
+            className="radar-video-video2"
+          />
+        </section>
       </main>
       <Footer />
     </>
