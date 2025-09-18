@@ -43,7 +43,7 @@ export default function BedrBeer() {
         </section>
 
         <BedrUx/>
-        
+
         <section aria-label="Dekorative striber">
           <Stripes
             colors={[
@@ -64,6 +64,12 @@ export default function BedrBeer() {
           />
         </section>
         <BedrDesign />
+        <section className="project-section">
+          <VideoPlayer
+            src="/videos/heleudvalg.mp4"   // ← læg fil i public/videos/
+            className="rounded-2xl shadow-lg mt-8"
+          />
+        </section>
       </main>
       <Footer />
     </>
