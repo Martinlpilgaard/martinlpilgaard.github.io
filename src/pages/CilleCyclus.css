@@ -198,11 +198,11 @@ h5 {
 
 .cilledesignimg2{
   display: block;
-  width: 800px;  /* nem skalering */
+  width: 250px;  /* nem skalering */
   height: auto;
-  rotate: 130deg;
-  margin-left: 30rem;
-  margin-top: -2rem;   
+  margin-left: 45rem;
+  margin-top: 20rem;
+  margin-bottom: 10rem;   
 }
 
 .cilledesignimg3{
