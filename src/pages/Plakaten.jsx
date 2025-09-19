@@ -84,6 +84,11 @@ export default function Plakaten() {
                             stagger="100ms"
                             rounded={true}
                           />
+               <img
+            src="/images/mockup.png"      // ← læg din fil i public/images/
+            alt="facade"
+            className="plakaten-image3"
+          />
                         </section>
 
       </main>

@@ -97,6 +97,16 @@
   margin-left: 3rem;
 }
 
+.plakaten-image3 {
+  display: block;
+  width: 820px;
+  height: auto;
+  margin-top: 4rem;
+  margin-bottom: 7rem;
+   border-radius: 16px;
+  margin-left: 12rem;
+}
+
 .plakaten-video {
   display: block;
   margin-top: 4rem;
