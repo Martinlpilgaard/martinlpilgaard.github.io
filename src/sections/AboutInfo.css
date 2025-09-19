@@ -32,8 +32,8 @@
   position: relative;
   z-index: 2;
   min-height: 100vh;
-  margin-left: 450px;
-  margin-top: 80px;
+  margin-left: 200px;
+  margin-top: 60px;
 
   /* centrering */
   display: flex;
@@ -52,7 +52,6 @@
   font-weight: 200;
   font-size: 1.1rem;
   max-width: 480px;
-
   /* Nu kan du styre placering med marginer */
   margin-top: 600px;   /* fx prøv at sætte 100px */
 }
@@ -60,4 +59,11 @@
 /* responsiv padding just som på Home */
 @media (min-width: 860px){
   .aboutinfo__textbox{ padding-left: 4rem; padding-right: 4rem; }
+}
+
+.aboutinfo__cvlink {
+  margin-top: 82rem;
+ margin-left: -20rem;
+ color: #354F41;
+ text-decoration: none;
 }

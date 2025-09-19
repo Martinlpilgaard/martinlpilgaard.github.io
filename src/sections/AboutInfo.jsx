@@ -32,6 +32,16 @@ Som person drives jeg af at mærke verden – hvad enten det sker gennem adrenal
   Af den grund har jeg altid mig selv med i det jeg laver, og stræber til enhver tid, efter at være nysgerrig, tage chancer og udvikle mine kompetencer.
 
           </h3>
+
+     {/* Link til CV */}
+        <a
+          href="/docs/CV.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="aboutinfo__cvlink"
+        >
+          Download mit CV (PDF)
+        </a>
       </div>
     </section>
   );
