@@ -3,7 +3,7 @@ import Footer from "../components/Footer";
 import VideoPlayer from "../components/VideoPlayer";
 import Stripes from "../components/Stripes";
 import PlakatHero from "../components/PlakatHero";
-import "./plakaten.css"; // ← sørg for at stien passer
+import "./Plakaten.css"; // ← sørg for at stien passer
 
 export default function Plakaten() {
   return (
