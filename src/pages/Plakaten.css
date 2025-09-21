@@ -168,3 +168,29 @@ display: block;
   margin-left: 31rem;
   margin-bottom: 5rem;
 }
+
+.project-nav4 {
+  display: flex;
+  justify-content: space-between; /* så man kan få plads til begge sider */
+  margin-top: 4rem;
+  margin-bottom: 6rem;
+  padding: 0 4rem;
+}
+
+.prev-project-link4 {
+  text-align: left;
+}
+
+.prev-project-link a {
+  font-family: "Poppins", system-ui, sans-serif;
+  font-weight: 200;
+  font-size: 1.8rem;
+  color: #E34C31;   /* accentfarve */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.prev-project-link a:hover {
+  color: #3E3735;
+  text-decoration: underline;
+}

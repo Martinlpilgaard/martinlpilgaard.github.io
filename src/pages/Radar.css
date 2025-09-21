@@ -85,7 +85,7 @@ display: block;
   width: 50%;
   height: auto;
   margin-top: 10rem;
-  margin-bottom: 30rem;
+  margin-bottom: 20rem;
   margin-left: 4rem;
   border-radius: 16px;
   border: 1px solid rgba(0,0,0,0.06);
@@ -123,3 +123,33 @@ display: block;
   .radar-hero-h2 { margin-top: -0.35em; }
   .radar-hero-h3 { margin-top: -0.28em; }
 }
+
+/* Navigation wrapper – brug samme class som i JSX */
+.radar-page .project-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 5rem auto 2rem;
+  max-width: 1200px;
+  padding: 0 2rem;
+}
+
+/* Links – scoped til Radar-siden */
+.radar-page .project-nav .project-link,
+.radar-page .project-nav .project-link:visited {
+  font-family: "Poppins", system-ui, sans-serif;
+  font-weight: 200;
+  font-size: 1.8rem;
+  margin-top: 5rem;
+  color: #E62860;     /* Radar-farve */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.radar-page .project-nav .project-link:hover {
+  color: #322E27;
+  text-decoration: underline;
+}
+
+

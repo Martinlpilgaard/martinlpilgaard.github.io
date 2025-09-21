@@ -89,8 +89,15 @@ export default function Plakaten() {
             alt="facade"
             className="plakaten-image3"
           />
-                        </section>
+        </section>
 
+      {/* Navigation til andre projekter */}
+        <div className="project-nav4">
+          <div className="prev-project-link">
+            <a href="/radar">← Radar</a>
+          </div>
+        </div>
+    
       </main>
       <Footer />
     </>

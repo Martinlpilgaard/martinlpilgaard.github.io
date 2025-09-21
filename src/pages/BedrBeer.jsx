@@ -72,6 +72,12 @@ export default function BedrBeer() {
           />
            </section>
         <BedrDesign2 />
+        
+        {/* Navigation mellem projekter */}
+<div className="project-nav">
+  <a href="/cillecyclus" className="project-link prev">← Cilles Cyklus</a>
+  <a href="/radar" className="project-link next">Radar →</a>
+</div>
       </main>
       <Footer />
     </>

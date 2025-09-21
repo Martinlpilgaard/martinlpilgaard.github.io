@@ -2,7 +2,7 @@
 .bedrbeer-project-page {
   min-height: 100vh;
   font-family: "Poppins", system-ui, sans-serif;
-font-style: italic;
+font-style: normal;
    color: #444;
    font-weight: 200;
 }
@@ -131,3 +131,36 @@ font-style: italic;
   40%  { opacity: 1; }
   to   { transform: scaleX(1); opacity: 1; }
 }
+
+/* Wrapper til navigations-links */
+.bedrbeer-project-page .project-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 10rem auto 2rem;
+  max-width: 1200px;
+  padding: 0 2rem;
+}
+
+/* Links – scoped til BedrBeer-siden */
+.bedrbeer-project-page .project-nav .project-link,
+.bedrbeer-project-page .project-nav .project-link:visited {
+  font-family: "Poppins", system-ui, sans-serif;
+  font-weight: 200;
+  font-size: 1.8rem;
+  color: #354F41;     /* BedrBeer-farve */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.bedrbeer-project-page .project-nav .project-link:hover {
+  color: #3E3735;
+  text-decoration: underline;
+}
+
+
+
+
+
+

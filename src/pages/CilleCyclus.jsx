@@ -112,8 +112,23 @@ export default function CilleCyclus() {
     className="rounded-2xl shadow-lg mt-6"
   />
 </section>
- <h4>Branding og brug af karakter</h4>
+
+    {/* Link til CV */}
+        <a
+          href="/docs/designmanualcille.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="designmanualcille"
+        >
+          Designmanual (PDF)
+        </a>
 <CilleDesign3 />
+
+    {/* Næste projekt link */}
+<div className="next-project-link">
+  <a href="/bedrbeer">Bedr Beer →</a>
+</div>
+
       </main>
       <Footer />
     </>

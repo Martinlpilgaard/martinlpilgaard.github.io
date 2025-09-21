@@ -73,6 +73,13 @@ export default function Radar() {
             className="radar-video-video2"
           />
         </section>
+
+        {/* Navigation mellem projekter */}
+      <div className="project-nav">
+  <a href="/bedrbeer" className="project-link prev">← BedrBeer</a>
+  <a href="/plakaten" className="project-link next">Plakaten →</a>
+</div>
+
       </main>
       <Footer />
     </>
