@@ -10,7 +10,7 @@ export default function Info() {
       {/* Tekst ovenpå billedet */}
       <div className="info-textbox">
         <h3>
-       Jeg er nysgerrig, idérig og elsker at samarbejde for at bringe idéer til liv.
+       Jeg er nysgerrig, idérig og elsker at samarbejde for at bringe idéer til live.
 <br/>
 <br/>
 MÅLET er at skabe visuelle universer, der inspirerer og gør en forskel – og med min frontend-erfaring kan jeg tage designet det ekstra skridt fra idé til virkelighed.

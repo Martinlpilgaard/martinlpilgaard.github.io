@@ -108,3 +108,23 @@
   /* fx: margin-left: 700px;  (kan også sættes inline hvis du vil) */
 }
 
+.contactinfo__subheading {
+   font-size: 2.5rem;
+  font-family: "Poppins", system-ui, sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  margin-top: 8px;
+  margin-left: 64%;
+  margin-top: -4%;
+}
+
+.contactinfo__subheading a {
+  color: #111;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.contactinfo__subheading a:hover {
+  color: #354F41;   /* grøn accent */
+  text-decoration: underline;
+}

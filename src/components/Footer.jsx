@@ -8,13 +8,13 @@ export default function Footer() {
       </a>
       <div className="footer-links">
         <a
-          href="https://www.linkedin.com/in/martinlpilgaard"
+          href="https://www.linkedin.com/in/martin-lind-pilgaard-04b2b7339/"
           target="_blank"
           rel="noopener noreferrer"
         >
           LinkedIn
         </a>
-        </a>
+
       </div>
     </footer>
   );

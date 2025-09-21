@@ -17,6 +17,11 @@ export default function ContactInfo() {
         <a href="mailto:martinlpilgaard@gmail.com">martinlpilgaard@gmail.com</a>
         </h2>
 
+       {/* Telefon */}
+        <h3 className="contactinfo__subheading">
+          <a href="tel:+4520341712">+45 20 34 17 12</a>
+        </h3>
+
         {/* FANG MIG + pil i samme række */}
     
           <h1 className="contactinfo__title">FANG MIG</h1>
