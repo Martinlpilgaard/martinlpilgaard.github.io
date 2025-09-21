@@ -3,6 +3,8 @@ import Footer from "../components/Footer";
 import VideoPlayer from "../components/VideoPlayer";
 import Stripes from "../components/Stripes";
 import PlakatHero from "../components/PlakatHero";
+import BackToTop from "../components/BackToTop"; 
+
 import "./Plakaten.css"; // ← sørg for at stien passer
 
 export default function Plakaten() {
@@ -98,6 +100,8 @@ export default function Plakaten() {
           </div>
         </div>
     
+     <BackToTop color= "#E8E8E8" bg="#E34C31" />
+
       </main>
       <Footer />
     </>

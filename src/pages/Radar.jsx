@@ -5,6 +5,7 @@ import RadarHero from "../components/RadarHero";
 import Stripes from "../components/Stripes";
 import RadarInspo from "../sections/RadarInspo";  
 import RadarDesign from "../sections/RadarDesign";
+import BackToTop from "../components/BackToTop";  
 
 import "./Radar.css";
 
@@ -79,6 +80,8 @@ export default function Radar() {
   <a href="/bedrbeer" className="project-link prev">← BedrBeer</a>
   <a href="/plakaten" className="project-link next">Plakaten →</a>
 </div>
+
+     <BackToTop color= "#E8E8E8" bg="#E62860" />
 
       </main>
       <Footer />

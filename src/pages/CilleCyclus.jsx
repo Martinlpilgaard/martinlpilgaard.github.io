@@ -8,6 +8,7 @@ import Stripes from "../components/Stripes";
 import CilleDesign from "../sections/CilleDesign";
 import CilleDesign2 from "../sections/CilleDesign2";
 import CilleDesign3 from "../sections/CilleDesign3";
+import BackToTop from "../components/BackToTop";  
 
 import "./CilleCyclus.css";
 
@@ -128,6 +129,8 @@ export default function CilleCyclus() {
 <div className="next-project-link">
   <a href="/bedrbeer">Bedr Beer →</a>
 </div>
+
+    <BackToTop color= "#E8E8E8" bg="#7D1928" />
 
       </main>
       <Footer />

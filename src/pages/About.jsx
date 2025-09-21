@@ -3,6 +3,7 @@ import Footer from "../components/Footer";
 import AboutHero from "../components/AboutHero";
 import AboutInfo from "../sections/AboutInfo";
 import Illustration from "../components/Illustration";
+import BackToTop from "../components/BackToTop";  
 
 export default function About() {
   return (
@@ -17,6 +18,8 @@ export default function About() {
         style={{ marginLeft: "0px" }}   // 👈 skubber lidt til højre
       />
       <AboutInfo />
+
+       <BackToTop color= "#E8E8E8" bg="#354F41" />
       <Footer />
     </>
   );

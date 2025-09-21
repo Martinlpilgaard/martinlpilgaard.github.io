@@ -5,7 +5,8 @@ import Stripes from "../components/Stripes";
 import BeerHero from "../components/BeerHero"; 
 import BedrDesign from "../sections/BedrDesign"; 
 import BedrDesign2 from "../sections/BedrDesign2"; 
-import BedrUx from "../sections/BedrUx";    
+import BedrUx from "../sections/BedrUx";  
+import BackToTop from "../components/BackToTop";  
 import "./BedrBeer.css";
 
 export default function BedrBeer() {
@@ -78,6 +79,9 @@ export default function BedrBeer() {
   <a href="/cillecyclus" className="project-link prev">← Cilles Cyklus</a>
   <a href="/radar" className="project-link next">Radar →</a>
 </div>
+
+        <BackToTop color= "#E8E8E8" bg="#354F41" />
+
       </main>
       <Footer />
     </>

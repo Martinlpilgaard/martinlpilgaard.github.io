@@ -3,7 +3,7 @@
   width: 100%;
   min-height: 70vh;   /* fylder hele viewport */
   overflow: hidden;
-  margin-bottom: -200px;
+  margin-bottom: -80px;
 }
 
 .contactinfo__img {

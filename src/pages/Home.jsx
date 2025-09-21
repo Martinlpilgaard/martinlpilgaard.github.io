@@ -4,6 +4,7 @@ import Welcome from "../sections/Welcome";
 import Info from "../sections/Info";
 import Projects from "../sections/Projects";
 import Illustration from "../components/Illustration";
+import BackToTop from "../components/BackToTop"; 
 import Footer from "../components/Footer";
 
 export default function Home() {
@@ -32,6 +33,9 @@ export default function Home() {
 />
 
 <Projects />
+
+ <BackToTop color= "#E8E8E8" bg="#3E3735" />
+
       <Footer />
     </>
   );
