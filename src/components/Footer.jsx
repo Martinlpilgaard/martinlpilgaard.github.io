@@ -14,12 +14,6 @@ export default function Footer() {
         >
           LinkedIn
         </a>
-        <a
-          href="https://www.instagram.com/martinlpilgaard"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Instagram
         </a>
       </div>
     </footer>

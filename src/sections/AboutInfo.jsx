@@ -26,7 +26,7 @@ export default function AboutInfo() {
 Motivationen for mit arbejde er af den grund muligheden for at arbejde intuitivt, og føre en ide ud i virkeligheden. Her gennem kreative processer hvor der er plads til at drømme stort, og hvor man i fællesskab kan opnå ambitiøse resultater.
 <br></br>
         <br></br>
-Som person drives jeg af at mærke verden – hvad enten det sker gennem adrenalin i nye oplevelser eller i fællesskab med venner i hverdagen. Finder jeg her min inspiration og nyder at inddrage den i mit arbejde for at skabe noget meningsfuldt og unikt. 
+Som person drives jeg af at mærke verden – hvad enten det sker gennem adrenalin i nye oplevelser eller i fællesskab med venner i hverdagen. Her finder jeg min inspiration og nyder at inddrage den i mit arbejde for at skabe noget meningsfuldt og unikt. 
   <br></br>
     <br></br>
   Af den grund har jeg altid mig selv med i det jeg laver, og stræber til enhver tid, efter at være nysgerrig, tage chancer og udvikle mine kompetencer.
