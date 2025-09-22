@@ -72,6 +72,7 @@ export default function BedrBeer() {
             className="rounded-2xl shadow-lg mt-8"
           />
            </section>
+        
         <BedrDesign2 />
         
         {/* Navigation mellem projekter */}

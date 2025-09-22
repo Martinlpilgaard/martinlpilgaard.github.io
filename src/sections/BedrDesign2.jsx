@@ -12,7 +12,6 @@ export default function BedrDesign2() {
         <img src="/images/bbag.png"   alt="Ekstra grafik" className="bedrimg12" />
         <img src="/images/btshirt.png"   alt="Ekstra grafik" className="bedrimg13" />
       </section>
-
     </>
   );
 }

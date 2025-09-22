@@ -26,7 +26,16 @@ export default function BedrDesign() {
         <img src="/images/doeser.svg"   alt="Ekstra grafik" className="bedrimg5" />
         <img src="/images/bedrtegn.svg"   alt="Ekstra grafik" className="bedrimg6" />
        <img src="/images/flasker.svg"   alt="Ekstra grafik" className="bedrimg7" />
-      
+          
+          {/* Link til CV */}
+        <a
+          href="/docs/designmanualbedr.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="designmanualbedr"
+        >
+          Designmanual (PDF)
+        </a>
       </section>
     </>
   );
