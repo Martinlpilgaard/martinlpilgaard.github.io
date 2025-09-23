@@ -19,6 +19,9 @@
      .hero h1, .hero p { animation: none !important; }
      så SLET den i dine overrides. */
 
+.styles.subheading {
+    margin-top: 8rem;
+}
   /* ========== WELCOME ==========
      Højrejustér layoutet, men behold eksisterende font-størrelser */
   .wrap {
@@ -61,7 +64,7 @@
 
   .info-section .info-textbox {
     position: relative !important;
-    max-width: 60vw !important;     /* holdes inde i randen */
+    max-width: 50vw !important;     /* holdes inde i randen */
     padding: 8px 0 !important;
   }
 
@@ -87,7 +90,7 @@
 
   /* Antag at mailen er et link i footeren */
   footer a[href^="mailto:"] {
-    font-size: 2.9rem !important;     /* mindre end standard */
+    font-size: 2.2rem !important;     /* mindre end standard */
     white-space: nowrap !important;    /* forsøg at holde på én linje */
   }
 
