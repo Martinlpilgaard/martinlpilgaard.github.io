@@ -70,27 +70,28 @@
     text-align: center !important;
   }
   .subheading {
-    font-size: clamp(14px, 4vw, 16px) !important;
-    margin-top: 80rem !important;
-    text-align: center !important;
+   margin-top: 0 !important;       /* Nulstiller den -400px */
+    font-size: clamp(14px, 4vw, 16px) !important; /* skalerer til mobil */
+    line-height: 1.6 !important;
+    text-align: center !important;  /* eller left afhængig af dit layout */
   }
 
   /* ---- INFO ---- */
   .info-section {
     min-height: auto !important;
-    margin-top: 5rem !important;
+    margin-top: 8rem !important;
   }
   .info-textbox {
     position: absolute !important;
-    max-width: 62vw !important;
+    max-width: 52vw !important;
     margin: 16px auto !important;
     text-align: center !important;
     margin-top: 15rem !important;
-    margin-left: 0rem !important;
+    margin-left: 5rem !important;
 
   }
   .info-textbox h2 {
-    font-size: 1.2rem !important;
+    font-size: 0.9rem !important;
   }
   .info-textbox h3 {
     font-size: 1rem !important;
