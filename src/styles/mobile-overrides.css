@@ -65,7 +65,7 @@
     width: clamp(16px, 7vw, 28px) !important; /* lidt mindre */
     display: block !important;
     margin-left: auto !important;   /* højre side */
-    margin-right: 8px !important;
+    margin-right: 12px !important;
     margin-top: 0 !important;
     margin-bottom: 0 !important;    /* ← ingen luft ned til Info */
   }
@@ -74,7 +74,7 @@
      INFO – tekst centreret, ingen luft øverst
      ========================= */
   .info-section {
-    margin-top: 0 !important;       /* fjern evt. mellemrum opad */
+    margin-top: -15px !important;       /* fjern evt. mellemrum opad */
     padding-top: 0 !important;
   }
 
@@ -90,17 +90,17 @@
 
   .info-section .info-textbox {
     position: relative !important;
-    margin: 10px auto 16px auto !important;  /* centrér + luft ned til Illustration 2 */
+    margin: 10px auto 26px auto !important;  /* centrér + luft ned til Illustration 2 */
     padding: 16px !important;
     text-align: center !important;           /* ← centrér teksten */
-    max-width: 90vw !important;              /* så den ikke rammer kanter */
+    max-width: 70vw !important;              /* så den ikke rammer kanter */
   }
 
   /* Illustration 2: lille, centreret og tæt på info-teksten */
   img[src$="illustration-2.png"]{
     display: block !important;
     width: clamp(20px, 10vw, 40px) !important;
-    margin: 6px auto 8px auto !important;   /* lidt luft, men ikke for meget */
+    margin: 12px auto 8px auto !important;   /* lidt luft, men ikke for meget */
   }
 
   /* =========================
@@ -134,7 +134,7 @@
      FOOTER – smal & centreret
      ========================= */
   footer .container {
-    max-width: 92vw !important;   /* “lidt under” skærmbredden */
+    max-width: 80% !important;   /* “lidt under” skærmbredden */
     margin: 0 auto !important;
     display: grid !important;
     justify-items: center !important;
