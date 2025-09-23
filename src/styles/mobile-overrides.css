@@ -72,6 +72,7 @@
   }
   .subheading {
    margin-top: 0 !important;       /* Nulstiller den -400px */
+   display: none!important ;
     font-size: clamp(14px, 4vw, 16px) !important; /* skalerer til mobil */
     line-height: 1.6 !important;
     text-align: center !important;  /* eller left afhængig af dit layout */
@@ -92,10 +93,10 @@
 
   }
   .info-textbox h2 {
-    font-size: 0.6rem !important;
+    font-size: 0.3rem !important;
   }
   .info-textbox h3 {
-    font-size: 1rem !important;
+    font-size: 0.7rem !important;
   }
 
   /* ---- ILLUSTRATION ---- */
@@ -127,12 +128,12 @@
 
   /* ---- FOOTER ---- */
   .footer {
-    padding: 2rem 10rem !important;
+    padding: 2rem !important;
     text-align: end !important;
   }
   .footer-email {
     font-size: 1.6rem !important; /* mindre mailtekst */
-    margin-right: 25rem;
+    margin-right: 5rem;
   }
   .footer-links {
     align-items: flex-end !important;
@@ -140,7 +141,7 @@
   }
   .footer-links a {
     font-size: 0.8rem !important;
-    margin-left: 15rem !important;
+    margin-left: 3rem !important;
   }
 
   /* ---- BACK TO TOP ---- */
