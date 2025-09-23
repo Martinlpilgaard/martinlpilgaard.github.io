@@ -1,20 +1,16 @@
 /* ===========================================
-   Globale mobile overrides (iPhone 13 Pro Max og ned)
+   Mobile overrides – iPhone 13 Pro Max og ned
    =========================================== */
 @media (max-width: 430px) {
 
-  /* === GENERELT === */
+  /* Sikkerhedsnet mod overflow */
+  html, body { overflow-x: hidden !important; }
+  * { box-sizing: border-box; }
   .container { padding-left: 16px !important; padding-right: 16px !important; }
   img, video { max-width: 100% !important; height: auto !important; }
-  * { box-sizing: border-box; }
-
-  /* === HEADER === */
-  .header .bar { row-gap: 8px !important; }
-  .nav { justify-content: center !important; gap: 16px !important; }
-  .brandText { font-size: 14px !important; }
 
   /* =========================
-     HERO
+     HERO – større og fælles stop
      ========================= */
   .hero h1,
   .hero p {
@@ -23,24 +19,25 @@
     opacity: 1 !important;
   }
   .hero h1 {
-    font-size: clamp(38px, 10.5vw, 56px) !important;
-    line-height: 1.05 !important;
+    font-size: clamp(42px, 12.5vw, 64px) !important; /* STØRRE titel */
+    line-height: 1.02 !important;
     text-align: center !important;
-    margin-bottom: 6px !important;
+    margin-bottom: 8px !important;
   }
   .hero p {
-    font-size: clamp(14px, 4.2vw, 18px) !important;
+    font-size: clamp(15px, 4.6vw, 18px) !important;
     text-align: center !important;
-    margin-top: 0 !important;
+    margin-top: 0 !important; /* stopper samme sted som h1 */
   }
 
   /* =========================
-     WELCOME
+     WELCOME – luft over sektionen
      ========================= */
-  .wrap { 
-    grid-template-columns: 1fr !important; 
-    gap: 16px !important; 
-    padding-block: 24px !important; 
+  .wrap {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+    padding-block: 24px !important;
+    margin-top: 16px !important;       /* ← ekstra luft under HERO */
   }
   .figure { order: 2 !important; margin: 0 !important; }
   .cutout {
@@ -49,41 +46,40 @@
     filter: none !important;
   }
   .title {
-    font-size: clamp(26px, 7vw, 34px) !important;
+    font-size: clamp(28px, 7.5vw, 36px) !important;
     margin: 0 0 8px 0 !important;
     text-align: left !important;
   }
   .subheading {
     font-size: clamp(14px, 4.2vw, 16px) !important;
     line-height: 1.7 !important;
-    margin: 12px 0 8px 0 !important;   /* ekstra luft over */
+    margin: 10px 0 10px 0 !important;  /* lidt luft over/under */
     text-align: left !important;
   }
-  .links { margin-top: 12px !important; }
-  .links a { font-size: 0.95rem !important; }
 
   /* =========================
-     ILLUSTRATION 1 (mellem Welcome og Info)
+     ILLUSTRATION 1 – nedskaler & højrejustér
+     (mellem Welcome og Info)
      ========================= */
   img[src$="illustration.png"]{
-    width: clamp(16px, 7.5vw, 32px) !important;
+    width: clamp(16px, 7vw, 28px) !important; /* lidt mindre */
     display: block !important;
-    margin-left: auto !important;
-    margin-right: 8px !important;  /* højre side */
-    margin-top: 8px !important;
-    margin-bottom: 8px !important;
+    margin-left: auto !important;   /* højre side */
+    margin-right: 8px !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;    /* ← ingen luft ned til Info */
   }
 
   /* =========================
-     INFO
+     INFO – tekst centreret, ingen luft øverst
      ========================= */
-  .info-section,
-  .aboutinfo { 
-    min-height: 60vh !important; 
-    overflow: hidden !important; 
+  .info-section {
+    margin-top: 0 !important;       /* fjern evt. mellemrum opad */
+    padding-top: 0 !important;
   }
-  .info-section .info-image,
-  .aboutinfo__img {
+
+  /* Hvis dit info-baggrundsbillede er absolut: gør det “normalt” på mobil */
+  .info-section .info-image {
     position: static !important;
     inset: auto !important;
     width: 100% !important;
@@ -91,27 +87,24 @@
     object-fit: cover !important;
     display: block !important;
   }
-  .info-section .info-textbox,
-  .aboutinfo__textbox {
+
+  .info-section .info-textbox {
     position: relative !important;
-    margin-top: 12px !important;     /* tekst under billedet */
+    margin: 10px auto 16px auto !important;  /* centrér + luft ned til Illustration 2 */
     padding: 16px !important;
-    padding-bottom: 24px !important; /* luft ned til illustration 2 */
-    text-align: left !important;
+    text-align: center !important;           /* ← centrér teksten */
+    max-width: 90vw !important;              /* så den ikke rammer kanter */
   }
 
-  /* Illustration 2 */
+  /* Illustration 2: lille, centreret og tæt på info-teksten */
   img[src$="illustration-2.png"]{
     display: block !important;
     width: clamp(20px, 10vw, 40px) !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
-    margin-top: 8px !important;
-    margin-bottom: 8px !important;
+    margin: 6px auto 8px auto !important;   /* lidt luft, men ikke for meget */
   }
 
   /* =========================
-     PROJECTS
+     PROJECTS – lodret kolonne
      ========================= */
   .projects-section .projects-wrapper{
     display: grid !important;
@@ -124,13 +117,13 @@
   .projects-section .projects-wrapper img,
   .projects-section .projects-wrapper .project-icon img,
   .projects-section .projects-wrapper [class*="icon-"] img {
-    width: clamp(90px, 40vw, 140px) !important;
+    width: clamp(96px, 42vw, 140px) !important;
     height: auto !important;
   }
   .projects-section .projects-wrapper [class*="icon-"],
   .projects-section .projects-wrapper .project-icon {
-    width: clamp(120px, 52vw, 180px) !important;
-    height: clamp(120px, 52vw, 180px) !important;
+    width: clamp(130px, 56vw, 180px) !important;
+    height: clamp(130px, 56vw, 180px) !important;
     border-radius: 999px !important;
     position: static !important;
     transform: none !important;
@@ -138,34 +131,25 @@
   }
 
   /* =========================
-     BACK TO TOP + FOOTER
+     FOOTER – smal & centreret
      ========================= */
-  .back-to-top {
-    width: 36px !important;
-    height: 36px !important;
-    bottom: 14px !important;
-    right: 14px !important;
+  footer .container {
+    max-width: 92vw !important;   /* “lidt under” skærmbredden */
+    margin: 0 auto !important;
+    display: grid !important;
+    justify-items: center !important;
+    gap: 10px !important;
+    text-align: center !important;
   }
-  footer .container { 
-    text-align: center !important; 
-    gap: 12px !important; 
+  footer a, footer p {
+    word-break: break-word !important; /* undgå overflow fra lange mails/links */
   }
 
-  /* =========================
-     TYPOGRAFI fallback
-     ========================= */
-  h1 { font-size: clamp(28px, 9vw, 42px) !important; }
-  h2 { font-size: clamp(20px, 6.4vw, 28px) !important; }
-  h3 { font-size: clamp(16px, 5vw, 22px) !important; }
-  p  { font-size: clamp(14px, 4.2vw, 18px) !important; }
-
-  /* =========================
-     Sikkerhedsnet mod inline styles
-     ========================= */
+  /* Sikkerhedsnet mod hårde inline margins fra desktop */
   [style*="margin-left: 700px"],
   [style*="margin-left: 800px"],
   [style*="margin-right: 750px"],
-  [style*="margin-right: 700px"]{
+  [style*="margin-right: 700px"] {
     margin-left: auto !important;
     margin-right: auto !important;
   }
