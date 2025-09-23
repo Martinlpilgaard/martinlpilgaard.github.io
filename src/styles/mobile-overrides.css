@@ -1,101 +1,55 @@
-/* ================================
-   iPhone 13 Pro Max og ned (≤430px)
-   ================================ */
+/* ===========================================
+   Mobile overrides (iPhone 13 Pro Max og ned)
+   =========================================== */
 @media (max-width: 430px) {
 
   /* Sikkerhedsnet */
-  html, body { overflow-x: hidden !important; }
-  .container { padding-left: 16px !important; padding-right: 16px !important; }
-  img, video { max-width: 100% !important; height: auto !important; }
-
-  /* ========== HERO ==========
-     Behold normal animation (ingen overrides her),
-     vi sørger kun for god spacing på mobil. */
-  .hero {
-    padding-top: 8px !important;  /* lidt luft i toppen */
-    padding-bottom: 20px!important;
+  html, body {
+    overflow-x: hidden !important;
   }
-  /* IMPORTANT: hvis du tidligere har haft en regel med
-     .hero h1, .hero p { animation: none !important; }
-     så SLET den i dine overrides. */
-
-.styles.subheading {
-    margin-top: 8rem;
-}
-  /* ========== WELCOME ==========
-     Højrejustér layoutet, men behold eksisterende font-størrelser */
-  .wrap {
-    grid-template-columns: 1fr !important;
-    gap: 16px !important;
-    padding-block: 24px !important;
-    margin-top: 14px !important;       /* lidt luft under Hero */
-  }
-  .figure { order: 2 !important; margin: 0 !important; }
-
-  /* Tekstcontainer højreorienteres */
-  .title,
-  .subheading,
-  .links {
-    text-align: right !important;
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-  }
-
-  /* Behold dine nuværende størrelser – vi rører IKKE font-size her */
-  /* (Hvis noget kolliderer, kan du nøjes med lidt mere luft:) */
-  .subheading { margin-top: 10px !important; }
-
-  /* ========== INFO ==========
-     Gør tekst mindre, skub mod højre, men hold inde i randen */
-  .info-section {
-    margin-top: 10rem !important;      /* ingen ekstra luft over */
-    padding-top: 0 !important;
-  }
-
-  /* Hvis du bruger absolut baggrundsbillede på desktop,
-     bliver det “normalt” på mobil, så tekst kan ligge pænt under */
-  .info-section .info-image {
-    position: static !important;
-    inset: auto !important;
-    width: 100% !important;
+  img, video {
+    max-width: 100% !important;
     height: auto !important;
-    object-fit: cover !important;
+  }
+  * {
+    box-sizing: border-box;
   }
 
-  .info-section .info-textbox {
-    position: relative !important;
-    max-width: 50vw !important;     /* holdes inde i randen */
-    padding: 8px 0 !important;
+  /* HERO */
+  .hero h1 {
+    font-size: clamp(34px, 9vw, 48px) !important;
+    text-align: center !important;
   }
-
-  /* Gør brødtekst lidt mindre på mobil */
-  .info-section .info-textbox p,
-  .info-section .info-textbox h3,
-  .info-section .info-textbox h4 {
-    font-size: clamp(13px, 3.8vw, 15px) !important;
-    line-height: 1.6 !important;
-    margin: 0 0 6px 0 !important;
-  }
-
-  /* ========== FOOTER ==========
-     Gør mail mindre, hold på én linje hvis muligt */
-  footer .container {
-    max-width: 92vw !important;
-    margin: 0 auto !important;
-    display: grid !important;
-    justify-items: center !important;
-    gap: 8px !important;
+  .hero p {
+    font-size: clamp(14px, 4.2vw, 18px) !important;
     text-align: center !important;
   }
 
-  /* Antag at mailen er et link i footeren */
-  footer a[href^="mailto:"] {
-    font-size: 2.2rem !important;     /* mindre end standard */
-    white-space: nowrap !important;    /* forsøg at holde på én linje */
+  /* WELCOME */
+  .wrap {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+  }
+  .figure { order: 2 !important; }
+
+  /* INFO */
+  .info-section .info-textbox {
+    max-width: 92vw !important;
+    margin: 0 auto !important;
+    text-align: center !important;
   }
 
-  /* Hvis du har separat LinkedIn-l ink ved siden af, så gør begge lidt mindre */
+  /* PROJECTS */
+  .projects-section .projects-wrapper {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+  }
+
+  /* FOOTER */
+  footer .container {
+    text-align: center !important;
+  }
   footer a {
-    font-size: 1.9rem !important;
+    font-size: 0.9rem !important;
   }
 }
