@@ -1,156 +1,99 @@
-/* ===========================================
-   Mobile overrides – iPhone 13 Pro Max og ned
-   =========================================== */
+/* ================================
+   iPhone 13 Pro Max og ned (≤430px)
+   ================================ */
 @media (max-width: 430px) {
 
-  /* Sikkerhedsnet mod overflow */
+  /* Sikkerhedsnet */
   html, body { overflow-x: hidden !important; }
-  * { box-sizing: border-box; }
   .container { padding-left: 16px !important; padding-right: 16px !important; }
   img, video { max-width: 100% !important; height: auto !important; }
 
-  /* =========================
-     HERO – større og fælles stop
-     ========================= */
-  .hero h1,
-  .hero p {
-    animation: none !important;
-    transform: none !important;
-    opacity: 1 !important;
+  /* ========== HERO ==========
+     Behold normal animation (ingen overrides her),
+     vi sørger kun for god spacing på mobil. */
+  .hero {
+    padding-top: 8px !important;  /* lidt luft i toppen */
   }
-  .hero h1 {
-    font-size: clamp(42px, 12.5vw, 64px) !important; /* STØRRE titel */
-    line-height: 1.02 !important;
-    text-align: center !important;
-    margin-bottom: 8px !important;
-  }
-  .hero p {
-    font-size: clamp(15px, 4.6vw, 18px) !important;
-    text-align: center !important;
-    margin-top: 0 !important; /* stopper samme sted som h1 */
-  }
+  /* IMPORTANT: hvis du tidligere har haft en regel med
+     .hero h1, .hero p { animation: none !important; }
+     så SLET den i dine overrides. */
 
-  /* =========================
-     WELCOME – luft over sektionen
-     ========================= */
+  /* ========== WELCOME ==========
+     Højrejustér layoutet, men behold eksisterende font-størrelser */
   .wrap {
     grid-template-columns: 1fr !important;
     gap: 16px !important;
     padding-block: 24px !important;
-    margin-top: 16px !important;       /* ← ekstra luft under HERO */
+    margin-top: 14px !important;       /* lidt luft under Hero */
   }
   .figure { order: 2 !important; margin: 0 !important; }
-  .cutout {
-    width: min(78vw, 420px) !important;
-    margin: 0 auto !important;
-    filter: none !important;
-  }
-  .title {
-    font-size: clamp(28px, 7.5vw, 36px) !important;
-    margin: 0 0 8px 0 !important;
-    text-align: left !important;
-  }
-  .subheading {
-    font-size: clamp(14px, 4.2vw, 16px) !important;
-    line-height: 1.7 !important;
-    margin: 10px 0 10px 0 !important;  /* lidt luft over/under */
-    text-align: left !important;
+
+  /* Tekstcontainer højreorienteres */
+  .title,
+  .subheading,
+  .links {
+    text-align: right !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
   }
 
-  /* =========================
-     ILLUSTRATION 1 – nedskaler & højrejustér
-     (mellem Welcome og Info)
-     ========================= */
-  img[src$="illustration.png"]{
-    width: clamp(16px, 7vw, 28px) !important; /* lidt mindre */
-    display: block !important;
-    margin-left: auto !important;   /* højre side */
-    margin-right: 12px !important;
-    margin-top: 0 !important;
-    margin-bottom: 0 !important;    /* ← ingen luft ned til Info */
-  }
+  /* Behold dine nuværende størrelser – vi rører IKKE font-size her */
+  /* (Hvis noget kolliderer, kan du nøjes med lidt mere luft:) */
+  .subheading { margin-top: 10px !important; }
 
-  /* =========================
-     INFO – tekst centreret, ingen luft øverst
-     ========================= */
+  /* ========== INFO ==========
+     Gør tekst mindre, skub mod højre, men hold inde i randen */
   .info-section {
-    margin-top: -15px !important;       /* fjern evt. mellemrum opad */
+    margin-top: 0 !important;      /* ingen ekstra luft over */
     padding-top: 0 !important;
   }
 
-  /* Hvis dit info-baggrundsbillede er absolut: gør det “normalt” på mobil */
+  /* Hvis du bruger absolut baggrundsbillede på desktop,
+     bliver det “normalt” på mobil, så tekst kan ligge pænt under */
   .info-section .info-image {
     position: static !important;
     inset: auto !important;
     width: 100% !important;
     height: auto !important;
     object-fit: cover !important;
-    display: block !important;
   }
 
   .info-section .info-textbox {
     position: relative !important;
-    margin: 10px auto 26px auto !important;  /* centrér + luft ned til Illustration 2 */
-    padding: 16px !important;
-    text-align: center !important;           /* ← centrér teksten */
-    max-width: 70vw !important;              /* så den ikke rammer kanter */
+    max-width: 92vw !important;     /* holdes inde i randen */
+    margin: 10px 8px 10px auto !important; /* skub mod højre */
+    padding: 8px 0 !important;
+    text-align: right !important;
   }
 
-  /* Illustration 2: lille, centreret og tæt på info-teksten */
-  img[src$="illustration-2.png"]{
-    display: block !important;
-    width: clamp(20px, 10vw, 40px) !important;
-    margin: 12px auto 8px auto !important;   /* lidt luft, men ikke for meget */
+  /* Gør brødtekst lidt mindre på mobil */
+  .info-section .info-textbox p,
+  .info-section .info-textbox h3,
+  .info-section .info-textbox h4 {
+    font-size: clamp(13px, 3.8vw, 15px) !important;
+    line-height: 1.6 !important;
+    margin: 0 0 6px 0 !important;
   }
 
-  /* =========================
-     PROJECTS – lodret kolonne
-     ========================= */
-  .projects-section .projects-wrapper{
-    display: grid !important;
-    grid-template-columns: 1fr !important;
-    gap: 16px !important;
-    justify-items: center !important;
-    align-items: center !important;
-    padding: 0 8px !important;
-  }
-  .projects-section .projects-wrapper img,
-  .projects-section .projects-wrapper .project-icon img,
-  .projects-section .projects-wrapper [class*="icon-"] img {
-    width: clamp(96px, 42vw, 140px) !important;
-    height: auto !important;
-  }
-  .projects-section .projects-wrapper [class*="icon-"],
-  .projects-section .projects-wrapper .project-icon {
-    width: clamp(130px, 56vw, 180px) !important;
-    height: clamp(130px, 56vw, 180px) !important;
-    border-radius: 999px !important;
-    position: static !important;
-    transform: none !important;
-    margin: 0 auto !important;
-  }
-
-  /* =========================
-     FOOTER – smal & centreret
-     ========================= */
+  /* ========== FOOTER ==========
+     Gør mail mindre, hold på én linje hvis muligt */
   footer .container {
-    max-width: 80% !important;   /* “lidt under” skærmbredden */
+    max-width: 92vw !important;
     margin: 0 auto !important;
     display: grid !important;
     justify-items: center !important;
-    gap: 10px !important;
+    gap: 8px !important;
     text-align: center !important;
   }
-  footer a, footer p {
-    word-break: break-word !important; /* undgå overflow fra lange mails/links */
+
+  /* Antag at mailen er et link i footeren */
+  footer a[href^="mailto:"] {
+    font-size: 0.9rem !important;     /* mindre end standard */
+    white-space: nowrap !important;    /* forsøg at holde på én linje */
   }
 
-  /* Sikkerhedsnet mod hårde inline margins fra desktop */
-  [style*="margin-left: 700px"],
-  [style*="margin-left: 800px"],
-  [style*="margin-right: 750px"],
-  [style*="margin-right: 700px"] {
-    margin-left: auto !important;
-    margin-right: auto !important;
+  /* Hvis du har separat LinkedIn-l ink ved siden af, så gør begge lidt mindre */
+  footer a {
+    font-size: 0.9rem !important;
   }
 }
