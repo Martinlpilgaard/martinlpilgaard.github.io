@@ -21,6 +21,7 @@
     grid-template-columns: 1fr !important;
     row-gap: 8px !important;
     justify-items: center !important;
+    margin-bottom: 15rem;
   }
   .nav {
     justify-content: center !important;
@@ -91,7 +92,7 @@
 
   }
   .info-textbox h2 {
-    font-size: 0.9rem !important;
+    font-size: 0.6rem !important;
   }
   .info-textbox h3 {
     font-size: 1rem !important;
@@ -126,12 +127,12 @@
 
   /* ---- FOOTER ---- */
   .footer {
-    padding: 2rem 5rem !important;
+    padding: 2rem 10rem !important;
     text-align: end !important;
   }
   .footer-email {
     font-size: 1.6rem !important; /* mindre mailtekst */
-    margin-right: 15rem;
+    margin-right: 25rem;
   }
   .footer-links {
     align-items: flex-end !important;
@@ -139,7 +140,7 @@
   }
   .footer-links a {
     font-size: 0.8rem !important;
-    margin-left: 5rem !important;
+    margin-left: 15rem !important;
   }
 
   /* ---- BACK TO TOP ---- */
