@@ -129,3 +129,143 @@
     margin-right: auto !important;
   }
 }
+
+/* ===========================================
+   iPhone 13 Pro Max og ned
+   =========================================== */
+@media (max-width: 430px) {
+
+  /* --- GENERELT: sikr at ting ikke går ud over kanterne --- */
+  .container { padding-left: 16px !important; padding-right: 16px !important; }
+  img, video { max-width: 100% !important; height: auto !important; }
+  * { box-sizing: border-box; }
+
+  /* =========================
+     HERO (stop p-animationen)
+     ========================= */
+  .hero h1 {
+    /* lidt større igen på mobil */
+    font-size: clamp(34px, 9vw, 48px) !important;
+    line-height: 1.1 !important;
+    text-align: center !important;
+  }
+  .hero p {
+    /* stop animationen under titlen */
+    animation: none !important;
+    transform: none !important;
+    opacity: 1 !important;
+    text-align: center !important;
+    margin-top: 8px !important;
+    font-size: clamp(14px, 4.2vw, 18px) !important;
+  }
+
+  /* =========================
+     WELCOME (din CSS ovenfra)
+     ========================= */
+  /* Stack kolonner til én kolonne */
+  .wrap { grid-template-columns: 1fr !important; gap: 16px !important; padding-block: 24px !important; }
+
+  /* Vis teksten først, billedet bagefter */
+  .figure { order: 2 !important; margin: 0 !important; }
+
+  /* Billedet skaleres og centreres, ingen negative margins */
+  .cutout{
+    width: min(78vw, 420px) !important;
+    margin: 0 auto !important;
+    filter: none !important; /* valgfrit – fjern gråtone på mobil */
+  }
+
+  /* Titel i Welcome (hvis du viser den) */
+  .title{
+    font-size: clamp(26px, 7vw, 34px) !important;
+    margin: 0 0 8px 0 !important;
+    text-align: left !important;
+  }
+
+  /* Subheading skal OP under billedet (øverst i sektionen) og være mindre */
+  .subheading{
+    font-size: clamp(14px, 4.2vw, 16px) !important;
+    line-height: 1.7 !important;
+    margin: 0 0 8px 0 !important;
+    text-align: left !important;
+  }
+
+  /* Links under subheading – tættere og uden overflow */
+  .links { margin-top: 12px !important; }
+  .links a { font-size: 0.95rem !important; }
+
+  /* =========================
+     ILLUSTRATION (mellem sektioner)
+     ========================= */
+  /* Neutralisér de store desktop-margins og centrer på mobil */
+  img[src$="illustration.png"],
+  img[src$="illustration-2.png"]{
+    display: block !important;
+    width: clamp(20px, 10vw, 40px) !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-top: 8px !important;
+    margin-bottom: 8px !important;
+  }
+
+  /* =========================
+     INFO sektion (tekst ovenpå baggrund)
+     ========================= */
+  .info-section,
+  .aboutinfo {
+    min-height: 60vh !important;
+    overflow: hidden !important;
+  }
+  .info-section .info-textbox,
+  .aboutinfo__textbox {
+    padding: 16px !important;
+    text-align: left !important;
+  }
+
+  /* =========================
+     PROJECTS (lodret kolonne)
+     ========================= */
+  .projects-section .projects-wrapper{
+    display: grid !important;
+    grid-template-columns: 1fr !important;   /* lodret */
+    gap: 16px !important;
+    justify-items: center !important;
+    align-items: center !important;
+    padding: 0 8px !important;
+  }
+
+  /* Gør ikonerne ens i størrelsen – uanset hvilke klasser du bruger */
+  .projects-section .projects-wrapper img,
+  .projects-section .projects-wrapper .project-icon img,
+  .projects-section .projects-wrapper [class*="icon-"] img {
+    width: clamp(90px, 40vw, 140px) !important;
+    height: auto !important;
+    display: block !important;
+  }
+
+  /* Hvis dine badges/ikoner ligger i runde “felter”, så ensart dem også */
+  .projects-section .projects-wrapper [class*="icon-"],
+  .projects-section .projects-wrapper .project-icon {
+    width: clamp(120px, 52vw, 180px) !important;
+    height: clamp(120px, 52vw, 180px) !important;
+    border-radius: 999px !important;
+    position: static !important;   /* fjern absolut placering på mobil */
+    transform: none !important;
+    margin: 0 auto !important;
+  }
+
+  /* Sikkerhedsnet mod inline styles der skubber for langt ud på mobil */
+  [style*="margin-left: 700px"],
+  [style*="margin-left: 800px"],
+  [style*="margin-right: 750px"],
+  [style*="margin-right: 700px"]{
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  /* =========================
+     FOOTER + BackToTop
+     ========================= */
+  footer .container { text-align: center !important; gap: 12px !important; }
+  .back-to-top { width: 36px !important; height: 36px !important; bottom: 14px !important; right: 14px !important; }
+}
