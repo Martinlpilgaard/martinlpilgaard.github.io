@@ -4,6 +4,7 @@ import { BrowserRouter } from "react-router-dom";
 import App from "./App.jsx";
 import "./index.css";
 import ScrollToTop from "./components/ScrollToTop.jsx";
+import "./styles/mobile-overrides.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>

@@ -1,0 +1,131 @@
+/* ===========================================
+   Globale mobile overrides (iPhone 13 Pro Max og ned)
+   UDEN at ændre din eksisterende kode
+   =========================================== */
+@media (max-width: 430px) {
+
+  /* 1) Standard container/padding lidt strammere på mobil */
+  .container {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+  /* 2) Header: nav centreres lidt tættere */
+  .header .bar { row-gap: 8px !important; }
+  .nav { justify-content: center !important; gap: 16px !important; }
+  .brandText { font-size: 14px !important; }
+
+  /* 3) HERO: typografi skalerer og centreres */
+  .hero h1 { 
+    font-size: clamp(36px, 12vw, 54px) !important; 
+    text-align: center !important; 
+  }
+  .hero p { 
+    font-size: clamp(14px, 4vw, 18px) !important; 
+    text-align: center !important; 
+  }
+
+  /* 4) WELCOME: vi kan ikke ramme CSS-modul-klasserne,
+     men vi kan ramme det store portrætbillede via alt-teksten.
+     (Din <img alt="Martin sidder og kigger op"> i Welcome) */
+  img[alt="Martin sidder og kigger op"]{
+    width: min(72vw, 420px) !important;
+    height: auto !important;
+    display: block !important;
+    margin: 0 auto 16px !important;
+    filter: none !important; /* hvis den var gråtonet, fjern på mobil */
+  }
+
+  /* 5) Illustration-komponenten:
+     Vi kan ikke redigere props, så vi “overstyrer” margin vha. attribute selectors
+     baseret på filnavnet. Justér hvis dine filnavne ændres. */
+  img[src$="illustration.png"],
+  img[src$="illustration-2.png"]{
+    display: block !important;
+    width: clamp(20px, 10vw, 40px) !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-top: 8px !important;
+    margin-bottom: 8px !important;
+  }
+
+  /* Hvis Illustration har en wrapper med class "illustration", får den center-opførsel */
+  .illustration { 
+    margin-left: auto !important; 
+    margin-right: auto !important; 
+  }
+
+  /* 6) INFO-section (fuld-bredde billede + overlay + tekstboks) */
+  .info-section,
+  .aboutinfo {
+    min-height: 60vh !important;
+  }
+  .info-section .info-textbox,
+  .aboutinfo__textbox {
+    padding: 16px !important;
+    text-align: left !important;
+  }
+  .aboutinfo__textbox h3 {
+    font-size: clamp(14px, 3.7vw, 16px) !important;
+    line-height: 1.6 !important;
+  }
+
+  /* 7) PROJECTS: grid i 2 kolonner på mobil, mere luft */
+  .projects-section .projects-wrapper{
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 14px !important;
+    justify-items: center !important;
+  }
+  /* Hvis dine ikoner var absolut placeret på desktop, “normaliser” på mobil */
+  .projects-section .icon-1,
+  .projects-section .icon-2,
+  .projects-section .icon-3,
+  .projects-section .icon-4{
+    position: static !important;
+    transform: none !important;
+    margin: 0 !important;
+  }
+
+  /* 8) Videoer: altid 100% bredde */
+  video { 
+    width: 100% !important; 
+    height: auto !important; 
+  }
+
+  /* 9) Pile/Arrow-komponenter – gør dem synlige men små */
+  .arrowright img,
+  .arrowup img {
+    width: clamp(18px, 7vw, 28px) !important;
+    height: auto !important;
+  }
+
+  /* 10) BackToTop-knappen: lidt mindre på mobil */
+  .back-to-top {
+    width: 36px !important;
+    height: 36px !important;
+    bottom: 14px !important;
+    right: 14px !important;
+  }
+
+  /* 11) Footer: centrér links og giv luft */
+  footer .container {
+    text-align: center !important;
+    gap: 12px !important;
+  }
+
+  /* 12) Generel typografi-justering for store overskrifter */
+  h1 { font-size: clamp(28px, 9vw, 42px) !important; }
+  h2 { font-size: clamp(20px, 6.4vw, 28px) !important; }
+  h3 { font-size: clamp(16px, 5vw, 22px) !important; }
+  p  { font-size: clamp(14px, 4.2vw, 18px) !important; }
+
+  /* 13) “Sikkerhedsnet” mod hårde venstre/højre-margins der ødelægger mobil-flow */
+  [style*="margin-left: 700px"],
+  [style*="margin-left: 800px"],
+  [style*="margin-right: 750px"],
+  [style*="margin-right: 700px"]{
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
