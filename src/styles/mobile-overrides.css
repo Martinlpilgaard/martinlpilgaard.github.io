@@ -44,8 +44,7 @@
   .hero p {
     font-size: clamp(14px, 4vw, 18px) !important;
     margin: 0 auto !important;
-    text-align: center !important;
-    transform: none !important;
+    text-align: baseline !important;
     opacity: 1 !important;
   }
 
@@ -62,6 +61,7 @@
   .cutout {
     width: 80% !important;
     margin-top: 20rem !important;
+    margin-bottom: 50rem !important;
     filter: none !important;
   }
   .title {
@@ -71,7 +71,7 @@
   }
   .subheading {
     font-size: clamp(14px, 4vw, 16px) !important;
-    margin: 62px 0 0 0 !important;
+    margin: -62px 0 0 0 !important;
     text-align: center !important;
   }
 
@@ -85,7 +85,9 @@
     max-width: 92vw !important;
     margin: 16px auto !important;
     text-align: center !important;
-    padding: 0 12px !important;
+    margin-top: 40rem !important;
+    margin-left: 20rem !important;
+
   }
   .info-textbox h2 {
     font-size: 1.2rem !important;
@@ -128,6 +130,7 @@
   }
   .footer-email {
     font-size: 1.6rem !important; /* mindre mailtekst */
+    margin-right: 3rem;
   }
   .footer-links {
     align-items: flex-end !important;
@@ -135,6 +138,7 @@
   }
   .footer-links a {
     font-size: 0.8rem !important;
+    margin-bottom: 10remn !important;
   }
 
   /* ---- BACK TO TOP ---- */
