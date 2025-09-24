@@ -152,3 +152,9 @@
     right: 14px !important;
   }
 }
+
+@media (max-width: 430px){
+  .wrap h2[class*="subheading"]{
+    display: none !important;
+  }
+}
